@@ -10,6 +10,11 @@ import edu.vanderbilt.cs.account.Account;
 
 import java.time.LocalDateTime;
 
+/*
+TransferOperation represents a transfer of funds from one account to another. Executed and optionally
+stored by the AccountCommandExecutor in the Command design pattern.
+ */
+
 public class TransferOperation implements AccountOperation {
     private Account fromAccount;
     private Account toAccount;
