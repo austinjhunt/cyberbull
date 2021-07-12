@@ -15,6 +15,7 @@ package edu.vanderbilt.cs.account;
 import edu.vanderbilt.cs.Activity;
 import edu.vanderbilt.cs.Portfolio;
 import edu.vanderbilt.cs.WatchList;
+import edu.vanderbilt.cs.account.commander.AccountCommandExecutor;
 
 import java.util.List;
 
@@ -25,9 +26,11 @@ public class BrokerageAccount implements Account{
     private List<WatchList> watchLists;
     private String title;
     private String description;
+    private AccountCommandExecutor commander;
     public BrokerageAccount(String title, String description){
          this.title = title;
          this.description = description;
+         this.commander = new AccountCommandExecutor();
     }
 
     public double getBalance() {

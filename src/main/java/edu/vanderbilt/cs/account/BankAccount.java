@@ -11,12 +11,14 @@ as a balance at any given time that can be increased or decreased via transfers 
 package edu.vanderbilt.cs.account;
 
 import edu.vanderbilt.cs.Activity;
+import edu.vanderbilt.cs.account.commander.AccountCommandExecutor;
 
 public class BankAccount implements Account{
     private String routingNumber;
     private String accountNumber;
     private String description;
     private String title;
+    private AccountCommandExecutor commander;
     private Activity activity;
     private double balance;
 
@@ -25,6 +27,7 @@ public class BankAccount implements Account{
         this.description = description;
         this.routingNumber = routingNumber;
         this.accountNumber = accountNumber;
+        this.commander = new AccountCommandExecutor();
     }
     public BankAccount(String title, String description, String routingNumber, String accountNumber, double balance){
         this.title = title;
@@ -32,11 +35,11 @@ public class BankAccount implements Account{
         this.routingNumber = routingNumber;
         this.accountNumber = accountNumber;
         this.balance = balance;
+        this.commander = new AccountCommandExecutor();
     }
     public void setBalance(double balance){
         this.balance = balance;
     }
-
 
     public double getBalance(){
         return this.balance;
