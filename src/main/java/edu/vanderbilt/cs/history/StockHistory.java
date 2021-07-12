@@ -18,8 +18,10 @@ stock at that datetime.
 public class StockHistory {
     private HashMap<LocalDateTime, Double> priceHistory;
     private Stock stock;
-    public StockHistory(Stock stock){
+    private String frequency;
+    public StockHistory(Stock stock, String frequency){
         this.stock = stock;
+        this.frequency = frequency;
         this.priceHistory = new HashMap<>();
     }
     public void addRecord(LocalDateTime dateTime, double price){
