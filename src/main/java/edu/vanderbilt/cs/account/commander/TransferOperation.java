@@ -40,5 +40,4 @@ public class TransferOperation implements AccountOperation {
         this.dateTime = LocalDateTime.now();
         return this.successful;
     }
-
 }
