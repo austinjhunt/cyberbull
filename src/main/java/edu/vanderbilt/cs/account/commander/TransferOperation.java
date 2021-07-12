@@ -3,18 +3,21 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.account;
+package edu.vanderbilt.cs.account.commander;
+
+
+import edu.vanderbilt.cs.account.Account;
 
 import java.time.LocalDateTime;
 
-public class Transfer {
+public class TransferOperation implements AccountOperation {
     private Account fromAccount;
     private Account toAccount;
     private boolean successful = false;
     private double amount;
     private LocalDateTime dateTime;
 
-    public Transfer(Account fromAccount, Account toAccount, double amount){
+    public TransferOperation(Account fromAccount, Account toAccount, double amount){
         this.fromAccount = fromAccount;
         this.toAccount = toAccount;
         this.amount = amount;
@@ -32,4 +35,5 @@ public class Transfer {
         this.dateTime = LocalDateTime.now();
         return this.successful;
     }
+
 }
