@@ -38,18 +38,15 @@ public class BankAccount implements Account{
     public void setBalance(double balance){
         this.balance = balance;
     }
-
     public double getBalance(){
         return this.balance;
     }
     public void updateBalance(double delta){
         this.balance += delta;
     }
-
     public Activity getActivity() {
         return this.activity;
     }
-
     public void setActivity(Activity activity) {
         this.activity = activity;
     }
