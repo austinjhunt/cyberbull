@@ -13,8 +13,8 @@ The command pattern -- described in the link above as **a behavioral design patt
 stand-alone object that contains all information about the request** -- is used heavily for maintaining account 
 activity, where "activity" is actually a command invoker that stores (for optional undo/redo) concrete implementations 
 of an ["AccountOperation"](src/main/java/edu/vanderbilt/cs/account/commander/AccountOperation.java) interface; an 
-account operation could be a market or limit order of some quantity of shares of a stock, or perhaps a  
-fund transfer to or from another account. These concrete operation implementations are represented with the 
+account operation could be a market or limit order of some quantity of shares of a stock, or perhaps a fund transfer 
+to or from another account. These concrete operation implementations are represented with the 
 following classes: 
 * ["LimitOrderOperation"](src/main/java/edu/vanderbilt/cs/account/commander/LimitOrderOperation.java) - representing 
   a limit order, or an order to buy or sell some shares of a stock at either the limit price or better (lower if 
