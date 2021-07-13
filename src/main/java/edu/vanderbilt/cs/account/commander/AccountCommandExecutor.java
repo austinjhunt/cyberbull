@@ -13,16 +13,22 @@ package edu.vanderbilt.cs.account.commander;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+Invoker in command pattern, represents account activity; responsible for
+executing and optionally saving account-related commands, e.g. orders (for brokerage accounts)
+and transfers (brokerage and bank accounts)
+ */
+
 public class AccountCommandExecutor {
     private final List<AccountOperation> operations = new ArrayList<>();
     public List<AccountOperation> getOperations(){
         return this.operations;
     }
 
-    public boolean executeOperation(AccountOperation operation, boolean saveOperation){
+    public void executeOperation(AccountOperation operation, boolean saveOperation){
         if (saveOperation) {
             operations.add(operation);
         }
-        return operation.execute();
+        operation.execute();
     }
 }

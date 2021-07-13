@@ -3,14 +3,14 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.order;
+package edu.vanderbilt.cs.account.commander;
 
 import edu.vanderbilt.cs.Stock;
 import edu.vanderbilt.cs.account.Account;
 
-public class MarketOrder extends Order {
-    private Account account;
-    public MarketOrder(String action, Stock stock, double quantity, Account account){
+public class MarketOrderOperation extends OrderOperation {
+    private final Account account;
+    public MarketOrderOperation(String action, Stock stock, double quantity, Account account){
         super(action, stock, quantity);
         this.account = account;
     }

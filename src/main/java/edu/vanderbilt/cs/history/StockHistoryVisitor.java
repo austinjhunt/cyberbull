@@ -16,5 +16,5 @@ types of Stock Histories (which vary by time interval and length). Each implemen
 to pull information with different intervals.
  */
 public interface StockHistoryVisitor {
-    public List<HistoricalQuote> visit(Stock stock);
+    List<HistoricalQuote> visit(Stock stock);
 }

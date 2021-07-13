@@ -14,11 +14,11 @@ import edu.vanderbilt.cs.Activity;
 import edu.vanderbilt.cs.account.commander.AccountCommandExecutor;
 
 public class BankAccount implements Account{
-    private String routingNumber;
-    private String accountNumber;
-    private String description;
-    private String title;
-    private AccountCommandExecutor commander;
+    private final String routingNumber;
+    private final String accountNumber;
+    private final String description;
+    private final String title;
+    private final AccountCommandExecutor commander;
     private Activity activity;
     private double balance;
 

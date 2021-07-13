@@ -11,5 +11,5 @@ the command invoker (AccountCommandExecutor).
  */
 
 public interface AccountOperation {
-    boolean execute();
+    void execute();
 }

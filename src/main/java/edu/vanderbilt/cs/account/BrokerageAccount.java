@@ -24,9 +24,9 @@ public class BrokerageAccount implements Account{
     private Portfolio portfolio;
     private Activity activity;
     private List<WatchList> watchLists;
-    private String title;
-    private String description;
-    private AccountCommandExecutor commander;
+    private final String title;
+    private final String description;
+    private final AccountCommandExecutor commander;
     public BrokerageAccount(String title, String description){
          this.title = title;
          this.description = description;

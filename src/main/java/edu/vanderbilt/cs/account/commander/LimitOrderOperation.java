@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.order;
+package edu.vanderbilt.cs.account.commander;
 
 import edu.vanderbilt.cs.Stock;
 import edu.vanderbilt.cs.account.Account;
@@ -13,10 +13,10 @@ LimitOrder class represents a limit order (an order to buy or sell at a specific
 can only execute at the limit price or lower, where a sell limit order can only execute at the limit price or higher.
  */
 
-public class LimitOrder extends Order{
-    private double limitPrice;
-    private Account account;
-    public LimitOrder(String action, Stock stock, double quantity, double limitPrice, Account account){
+public class LimitOrderOperation extends OrderOperation{
+    private final double limitPrice;
+    private final Account account;
+    public LimitOrderOperation(String action, Stock stock, double quantity, double limitPrice, Account account){
         super(action, stock, quantity);
         this.limitPrice = limitPrice;
         this.account = account;

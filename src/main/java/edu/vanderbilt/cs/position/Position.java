@@ -19,11 +19,11 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Position {
-    private Stock stock;
+    private final Stock stock;
     private double quantity;
     private double netToday;
     private double netTotal;
-    private LocalDateTime created;
+    private final LocalDateTime created;
     private LocalDateTime updated;
 
     public Position(Stock stock, double quantity){

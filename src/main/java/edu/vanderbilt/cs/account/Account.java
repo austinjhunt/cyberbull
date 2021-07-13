@@ -13,9 +13,9 @@ package edu.vanderbilt.cs.account;
 import edu.vanderbilt.cs.Activity;
 
 public interface Account {
-    public double getBalance();
-    public void updateBalance(double delta);
-    public Activity getActivity();
-    public void setActivity(Activity activity);
+    double getBalance();
+    void updateBalance(double delta);
+    Activity getActivity();
+    void setActivity(Activity activity);
 
 }

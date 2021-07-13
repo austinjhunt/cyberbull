@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.order;
+package edu.vanderbilt.cs.account.commander;
 
 import edu.vanderbilt.cs.Stock;
 
@@ -19,16 +19,15 @@ Order class represents a buy or sell order on a particular stock; an order can b
 or a limit order; Limit/Market orders represented as subclasses of order.
 
  */
-public class Order {
+public class OrderOperation implements AccountOperation {
     protected String action; // buy or sell
     protected Stock stock;
     protected double quantity;
-    public Order(String action, Stock stock, double quantity){
+    public OrderOperation(String action, Stock stock, double quantity){
         this.action = action;
         this.stock = stock;
         this.quantity = quantity;
     }
-
 
     public boolean marketIsOpen(){
         boolean open = false;
@@ -49,4 +48,8 @@ public class Order {
         }
     }
 
+    @Override
+    public void execute() {
+        // over
+    }
 }

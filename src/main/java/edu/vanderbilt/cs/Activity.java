@@ -5,5 +5,3 @@
 
 package edu.vanderbilt.cs;
 
-public class Activity {
-}
