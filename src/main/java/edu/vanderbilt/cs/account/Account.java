@@ -10,7 +10,8 @@ implement their own versions of "balances".
 
 package edu.vanderbilt.cs.account;
 
-import edu.vanderbilt.cs.Activity;
+
+import edu.vanderbilt.cs.account.commander.Activity;
 
 public interface Account {
     double getBalance();

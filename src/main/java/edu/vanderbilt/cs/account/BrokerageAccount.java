@@ -12,10 +12,9 @@ We alias "corePosition" as "balance" for Account interface consistency.
 
 package edu.vanderbilt.cs.account;
 
-import edu.vanderbilt.cs.Activity;
 import edu.vanderbilt.cs.Portfolio;
 import edu.vanderbilt.cs.watchlist.WatchList;
-import edu.vanderbilt.cs.account.commander.AccountCommandExecutor;
+import edu.vanderbilt.cs.account.commander.Activity;
 
 import java.util.List;
 
@@ -26,11 +25,11 @@ public class BrokerageAccount implements Account{
     private List<WatchList> watchLists;
     private final String title;
     private final String description;
-    private final AccountCommandExecutor commander;
+    private final Activity commander;
     public BrokerageAccount(String title, String description){
          this.title = title;
          this.description = description;
-         this.commander = new AccountCommandExecutor();
+         this.commander = new Activity();
     }
 
     public double getBalance() {
