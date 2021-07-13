@@ -1,0 +1,48 @@
+/*
+ * Copyright (c) 2021. Austin J. Hunt.
+ * All rights reserved.
+ */
+
+package edu.vanderbilt.cs.order;
+
+import edu.vanderbilt.cs.Stock;
+import edu.vanderbilt.cs.account.Account;
+
+/*
+LimitOrder class represents a limit order (an order to buy or sell at a specific price or better); a buy limit order
+can only execute at the limit price or lower, where a sell limit order can only execute at the limit price or higher.
+ */
+
+public class LimitOrder extends Order{
+    private double limitPrice;
+    private Account account;
+    public LimitOrder(String action, Stock stock, double quantity, double limitPrice, Account account){
+        super(action, stock, quantity);
+        this.limitPrice = limitPrice;
+        this.account = account;
+    }
+
+    public void execute(){
+        if (this.action == "buy"){
+            this.executeBuy();
+        } else if (this.action == "sell"){
+            this.executeSell();
+        }
+    }
+    public void executeBuy(){
+        if (this.stock.getCurrentPrice() < this.limitPrice){
+            double totalValue = this.stock.getCurrentPrice() * this.quantity;
+            if (this.account.getBalance() >= totalValue) {
+                this.account.updateBalance(totalValue * -1);
+            }
+        }
+    }
+    public void executeSell(){
+        if (this.stock.getCurrentPrice() > this.limitPrice){
+            // sell - add total value of sell order to the account's corePosition
+            double totalValue = this.stock.getCurrentPrice() * this.quantity;
+            this.account.updateBalance(totalValue);
+
+        }
+    }
+}
