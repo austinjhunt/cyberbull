@@ -14,7 +14,7 @@ package edu.vanderbilt.cs.account;
 
 import edu.vanderbilt.cs.Activity;
 import edu.vanderbilt.cs.Portfolio;
-import edu.vanderbilt.cs.WatchList;
+import edu.vanderbilt.cs.watchlist.WatchList;
 import edu.vanderbilt.cs.account.commander.AccountCommandExecutor;
 
 import java.util.List;

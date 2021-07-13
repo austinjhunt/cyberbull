@@ -3,7 +3,9 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs;
+package edu.vanderbilt.cs.watchlist;
+
+import edu.vanderbilt.cs.Stock;
 
 import java.util.ArrayList;
 import java.util.List;
