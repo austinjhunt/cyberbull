@@ -19,7 +19,7 @@ executing and optionally saving account-related commands, e.g. orders (for broke
 and transfers (brokerage and bank accounts)
  */
 
-public class Activity {
+public class ActivityCommander {
     private final List<AccountOperation> operations = new ArrayList<>();
     public List<AccountOperation> getOperations(){
         return this.operations;

@@ -11,12 +11,12 @@ implement their own versions of "balances".
 package edu.vanderbilt.cs.account;
 
 
-import edu.vanderbilt.cs.account.commander.Activity;
+import edu.vanderbilt.cs.account.commander.ActivityCommander;
 
 public interface Account {
     double getBalance();
     void updateBalance(double delta);
-    Activity getActivity();
-    void setActivity(Activity activity);
+    ActivityCommander getActivity();
+    void setActivity(ActivityCommander activity);
 
 }

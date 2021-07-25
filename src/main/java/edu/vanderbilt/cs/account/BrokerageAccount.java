@@ -14,22 +14,22 @@ package edu.vanderbilt.cs.account;
 
 import edu.vanderbilt.cs.Portfolio;
 import edu.vanderbilt.cs.watchlist.WatchList;
-import edu.vanderbilt.cs.account.commander.Activity;
+import edu.vanderbilt.cs.account.commander.ActivityCommander;
 
 import java.util.List;
 
 public class BrokerageAccount implements Account{
     private double corePosition;
     private Portfolio portfolio;
-    private Activity activity;
+    private ActivityCommander activity;
     private List<WatchList> watchLists;
     private final String title;
     private final String description;
-    private final Activity commander;
+    private final ActivityCommander commander;
     public BrokerageAccount(String title, String description){
          this.title = title;
          this.description = description;
-         this.commander = new Activity();
+         this.commander = new ActivityCommander();
     }
 
     public double getBalance() {
@@ -44,10 +44,10 @@ public class BrokerageAccount implements Account{
         return portfolio;
     }
 
-    public Activity getActivity() {
+    public ActivityCommander getActivity() {
         return activity;
     }
-    public void setActivity(Activity activity) {
+    public void setActivity(ActivityCommander activity) {
         this.activity = activity;
     }
     public List<WatchList> getWatchLists() {
