@@ -4,7 +4,13 @@
  */
 
 package edu.vanderbilt.cs;
-
+/*
+A stock is a type of security, representing ownership of a publicly-traded company; stocks offer
+a way for investors to profit off of a publicly-traded company's growth (long positions),
+or possibly its failure (short positions). A share is a unit of the company's stock, and fractional shares
+are allowed. Ex: you cannot afford one full share of a stock because the price per share is $1000, so you buy
+0.1 shares for $100.
+ */
 public class Stock {
     private double currentPrice;
     private String symbol;

@@ -20,6 +20,26 @@ public class BankAccount implements Account{
     private ActivityCommander activity;
     private double balance;
 
+    public String getRoutingNumber() {
+        return routingNumber;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public ActivityCommander getCommander() {
+        return commander;
+    }
+
     public BankAccount(String title, String description, String routingNumber, String accountNumber){
         this.title = title;
         this.description = description;
@@ -38,11 +58,12 @@ public class BankAccount implements Account{
     public void setBalance(double balance){
         this.balance = balance;
     }
-    public double getBalance(){
-        return this.balance;
-    }
     public void updateBalance(double delta){
         this.balance += delta;
+    }
+
+    public double getBalance(){
+        return this.balance;
     }
     public ActivityCommander getActivity() {
         return this.activity;

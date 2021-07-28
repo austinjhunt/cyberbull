@@ -8,7 +8,6 @@ package edu.vanderbilt.cs.watchlist;
 import edu.vanderbilt.cs.Stock;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 public class WatchList {
@@ -18,14 +17,12 @@ public class WatchList {
         this.stocks = stocks;
     }
 
-    public List<Stock> add(Stock stock){
-        this.stocks.add(stock);
-        return this.stocks;
+    public boolean add(Stock stock){
+        return this.stocks.add(stock);
     }
 
-    public List<Stock> remove(Stock stock){
-        this.stocks.remove(stock);
-        return this.stocks;
+    public boolean remove(Stock stock){
+        return this.stocks.remove(stock);
     }
 
     public ArrayList<Stock> getStocks() {

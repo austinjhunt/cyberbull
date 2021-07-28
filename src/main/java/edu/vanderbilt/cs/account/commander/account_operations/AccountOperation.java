@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.account.commander;
+package edu.vanderbilt.cs.account.commander.account_operations;
 
 /*
 Part of the command pattern; represents an operation to be executed and optionally stored by

@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.account.commander;
+package edu.vanderbilt.cs.account.commander.account_operations;
 
 import edu.vanderbilt.cs.Stock;
 import edu.vanderbilt.cs.account.Account;

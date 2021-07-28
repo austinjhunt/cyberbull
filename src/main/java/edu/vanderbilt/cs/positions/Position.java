@@ -11,18 +11,29 @@ stock, your initial net is always 0. You gain or lose money from your initial
 investment based on the stock's performance. You can buy or sell more shares of a stock
 after your position is open to update your position.
  */
-package edu.vanderbilt.cs.position;
+package edu.vanderbilt.cs.positions;
 
 import edu.vanderbilt.cs.Stock;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+/*
+Class representing a "position" in a portfolio. A position is a single stock
+that a trader owns within his or her portfolio, where a portfolio can include many
+different positions. A position captures some quantity of shares of a stock, and
+some net gain or loss over time from initially being opened. It can be updated by
+adding or removing shares of that same stock to the position
+over time. You may want to add to your position if the price is low and buying power is high
+(i.e. the stock is bullish).
+ */
+
 public class Position {
     private final Stock stock;
     private double quantity;
     private double netToday;
     private double netTotal;
+    public double currentValue;
     private final LocalDateTime created;
     private LocalDateTime updated;
 
@@ -31,8 +42,16 @@ public class Position {
         this.quantity = quantity;
         this.netToday = 0;
         this.netTotal = 0;
+        this.currentValue = 0;
         this.created = LocalDateTime.now();
         this.updated = LocalDateTime.now();
+    }
+
+    public void setCurrentValue(double currentValue) {
+        this.currentValue = currentValue;
+    }
+    public double getCurrentValue(){
+        return this.currentValue;
     }
 
     public Stock getStock() {

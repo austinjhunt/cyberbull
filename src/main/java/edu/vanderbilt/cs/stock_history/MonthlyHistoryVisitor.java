@@ -3,10 +3,10 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.history;
+package edu.vanderbilt.cs.stock_history;
 
 /*
-Part of the Stock History visitor design pattern implementation to build out a stock's price history over 1 week
+Part of the Stock History visitor design pattern implementation to build out a stock's price history over 1 month
 intervals for some period of time.
  */
 
@@ -19,13 +19,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WeeklyHistoryVisitor implements StockHistoryVisitor {
+public class MonthlyHistoryVisitor implements StockHistoryVisitor {
     public List<HistoricalQuote> visit(Stock stock){
         List<HistoricalQuote> history = new ArrayList<>();
         try {
             yahoofinance.Stock yfinanceStock = YahooFinance.get(stock.getSymbol());
-            history.addAll(yfinanceStock.getHistory(Interval.WEEKLY));
-            System.out.println(history);
+            history.addAll(yfinanceStock.getHistory(Interval.MONTHLY));
         } catch (IOException e){
             System.out.println(e.getMessage());
         }
@@ -33,7 +32,7 @@ public class WeeklyHistoryVisitor implements StockHistoryVisitor {
     }
     public static void main(String[] args){
         Stock tesla = new Stock("TSLA");
-        WeeklyHistoryVisitor visitor = new WeeklyHistoryVisitor();
+        MonthlyHistoryVisitor visitor = new MonthlyHistoryVisitor();
         visitor.visit(tesla);
     }
 }

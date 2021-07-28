@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.history;
+package edu.vanderbilt.cs.stock_history;
 
 import edu.vanderbilt.cs.Stock;
 import yahoofinance.histquotes.HistoricalQuote;

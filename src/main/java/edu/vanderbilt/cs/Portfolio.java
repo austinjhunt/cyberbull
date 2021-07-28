@@ -6,7 +6,7 @@
 package edu.vanderbilt.cs;
 
 
-import edu.vanderbilt.cs.position.Position;
+import edu.vanderbilt.cs.positions.Position;
 
 import java.util.ArrayList;
 import java.util.List;

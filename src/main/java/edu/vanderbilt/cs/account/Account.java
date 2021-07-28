@@ -18,5 +18,4 @@ public interface Account {
     void updateBalance(double delta);
     ActivityCommander getActivity();
     void setActivity(ActivityCommander activity);
-
 }

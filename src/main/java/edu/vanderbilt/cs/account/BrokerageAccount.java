@@ -25,11 +25,16 @@ public class BrokerageAccount implements Account{
     private List<WatchList> watchLists;
     private final String title;
     private final String description;
+    private String routingNumber;
+    private String accountNumber;
     private final ActivityCommander commander;
-    public BrokerageAccount(String title, String description){
+    public BrokerageAccount(String title, String description, String routingNumber, String accountNumber){
          this.title = title;
          this.description = description;
+         this.routingNumber = routingNumber;
+         this.accountNumber = accountNumber;
          this.commander = new ActivityCommander();
+
     }
 
     public double getBalance() {
