@@ -1,0 +1,26 @@
+<div class="modal" id="bank-account-update-balance-modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="alert alert-info" role="alert">
+          Update Balance for Bank Account # <span class="d-inline" id="modal-bank-account-number"></span>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Current Balance: <span id="modal-bank-account-current-balance"></span></p>
+        <form id="updateBalanceForm" action="#" th:action="@{/bankAccounts/updateBalance}"  method="post">
+          <div class="mb-3">
+            <label for="balance" class="form-label">Update Balance</label>
+            <input type="hidden" name="accountNumber" id="modal-bank-account-hidden-input-account-number">
+            <input type="number" name="balance" class="form-control" id="balance">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" form="updateBalanceForm">Apply</button>
+      </div>
+    </div>
+  </div>
+</div>

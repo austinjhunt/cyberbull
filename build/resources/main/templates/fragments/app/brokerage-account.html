@@ -1,0 +1,98 @@
+<h1 class="text-end my-3">Manage your Cyberbull simulated brokerage account.</h1>
+<hr/>
+<div class="my-3 row">
+    <div class="col-sm-12 col-md-8">
+        <div class="my-2 row">
+            <div class="col-sm-6 col-md-6 text-start">
+                <h2 class="text-left my-2">Portfolio</h2>
+            </div>
+            <div class="col-sm-6 col-md-6 text-end">
+
+            </div>
+        </div>
+
+        <hr/>
+        <div class="my-2 row">
+            <div class="col-sm-6 col-md-6 text-start">
+                <h2 class="text-left my-2">WatchLists</h2>
+            </div>
+            <div class="col-sm-6 col-md-6 text-end">
+                <a th:href="'/watchlists/create/' + ${account.getAccountNumber()}" class="btn btn-primary"
+                   title="create watch list"><i class="fa fa-plus"></i> Add Watchlist</a>
+            </div>
+        </div>
+        <div th:if="${not #lists.isEmpty(watchlists)}">
+            <ul class="nav nav-tabs" id="accountTabs" role="tablist">
+                <!-- tab for each watch list in this account -->
+                <li class="nav-item" role="presentation" th:each="watchlist, indexStat: ${watchlists}">
+                    <button type="button" role="tab" data-bs-toggle="tab"
+                            th:id="'watchlist-' + ${indexStat.index} + '-tab'"
+                            th:text="${watchlist.getTitle()}"
+                            th:attr="
+                data-bs-target='#watchlist-' + ${indexStat.index},
+                aria-controls='watchlist-' + ${indexStat.index},
+                class=${indexStat.index == 0 ? 'nav-link active' : 'nav-link'},
+                aria-selected=${indexStat.index == 0 ? 'true' : 'false'}"
+                    ></button>
+                </li>
+            </ul>
+            <div class="tab-content" id="watchListsTabContent">
+                <div th:each="watchlist, indexStat: ${watchlists}"
+                     th:id="'watchlist-' + ${indexStat.index}" role="tabpanel"
+                     th:attr="aria-labelledby='#watchlist-' + ${indexStat.index} + '-tab',
+           class=${indexStat.index == 0 ? 'tab-pane fade show active' : 'tab-pane fade'}"
+                >
+                    <div class="py-1 text-end">
+                        <a
+                                th:href="'/watchlists/addStock/' + ${watchlist.getId()} + '/' + ${account.getAccountNumber()}">
+                            <i class="fa fa-plus"></i> Add Stock
+                        </a>
+                    </div>
+                    <!-- ELSE -->
+                    <div th:if="${not #lists.isEmpty(watchlist.getStocks())}">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Business Name</th>
+                                <th>Industry</th>
+                                <th>Share Price</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr th:each="stock: ${watchlist.getStocks()}">
+                                <td th:text="${stock.getSymbol()}"></td>
+                                <td th:text="${stock.getBusinessName()}"></td>
+                                <td th:text="${stock.getIndustry()}"></td>
+                                <td th:text="${stock.getCurrentPrice()}"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div th:unless="${not #lists.isEmpty(watchlist.getStocks())}">
+                        <p class="text-center my-2">You currently have no stocks in this watch list.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ELSE -->
+        <div th:unless="${not #lists.isEmpty(watchlists)}">
+            <p>You currently have no watch lists.</p>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title" th:text="'Account #: ' + ${account.getAccountNumber()}"></h5>
+                <h5 class="card-title" th:text="'Routing #: ' + ${account.getRoutingNumber()}"></h5>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title" th:text="'Account Title: ' + ${account.getTitle()}"></h5>
+                <p class="card-text" th:text="'Core position: ' + ${account.getBalance()}"></p>
+                <div class="text-end my-2">
+                    <a href="/transfer" class="btn btn-success" title="transfer funds">Transfer Funds</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

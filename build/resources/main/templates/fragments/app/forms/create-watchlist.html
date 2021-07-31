@@ -1,0 +1,13 @@
+<div class="my-2">
+  <form id="createWatchlistForm" action="#" th:action="@{'/watchlists/create/' + ${brokerageAccountNumber}}"
+        method="post">
+    <div class="mb-3">
+      <label for="watchlist-name" class="form-label">Watchlist Name</label>
+      <input type="text" class="form-control" id="watchlist-name" name="watchlist-name"
+             placeholder="Super cool stocks">
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary">Create WatchList</button>
+    </div>
+  </form>
+</div>

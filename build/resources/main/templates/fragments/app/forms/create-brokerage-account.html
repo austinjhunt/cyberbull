@@ -1,0 +1,18 @@
+<h2 class="my-3 text-center">Add a Brokerage Account</h2>
+<div class="container">
+  <form action="#" th:action="@{/brokerageAccounts/create}"  method="post">
+    <div class="mb-3">
+      <label for="inputTitle" class="form-label">Title</label>
+      <input type="text" name="title" class="form-control" id="inputTitle"
+             aria-describedby="inputTitleHelp">
+      <div id="inputTitleHelp" class="form-text">Provide a title for your new brokerage account.</div>
+    </div>
+    <div class="mb-3">
+      <label for="inputDescription" class="form-label">Description</label>
+      <textarea class="form-control" name="description" id="inputDescription" rows="3"
+                aria-describedby="inputDescriptionHelp"></textarea>
+      <div  id="inputDescriptionHelp" class="form-text">Provide a description for your new brokerage account.</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Brokerage Account</button>
+  </form>
+</div>

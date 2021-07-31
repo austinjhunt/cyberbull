@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-uppercase" href="/">
+      <img height="50" src="/bullwhite.png" alt="cyberbull logo"/>
+      Cyberbull Investment Simulator
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="accountsDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Accounts
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="accountsDropdown">
+            <li><a class="dropdown-item" href="/bankAccounts/create">Add Bank Account</a></li>
+            <li><a class="dropdown-item" href="/brokerageAccounts/create">Add Brokerage Account</a></li>
+            <li><a class="dropdown-item" href="/bankAccounts/createRandom">Generate Random Bank
+              Account</a></li>
+            <li><a class="dropdown-item" href="/brokerageAccounts/createRandom">Generate Random Brokerage
+              Account</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/transfer">Transfer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>

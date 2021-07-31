@@ -1,0 +1,34 @@
+<form id="fundTransferForm" action="#" th:action="@{/transfer}"  method="post">
+  <div class="p-2 my-2">
+    <label for="fromAccount" class="form-label">From Account</label>
+    <select id="fromAccount" name="fromAccountNumber" class="form-select" aria-label="Select a from account">
+      <option selected>Choose a from account</option>
+      <option th:each="account: ${bankAccounts}"
+              th:value="'bank-' + ${account.getAccountNumber()}"
+              th:text="'Bank: ' + ${account.getTitle()} + ' - $' + ${account.getBalance()}"></option>
+      <option th:each="account: ${brokerageAccounts}"
+              th:value="'brokerage-' + ${account.getAccountNumber()}"
+              th:text="'Brokerage:' + ${account.getTitle()} + ' - $' + ${account.getBalance()}"></option>
+    </select>
+  </div>
+  <div class="p-2 my-2">
+    <label for="toAccount" class="form-label">To Account</label>
+    <select id="toAccount" name="toAccountNumber" class="form-select" aria-label="Select a from account">
+      <option selected>Choose a to account</option>
+      <option th:each="account: ${bankAccounts}"
+              th:value="'bank-' + ${account.getAccountNumber()}"
+              th:text="'Bank: ' + ${account.getTitle()} + ' - $' + ${account.getBalance()}"></option>
+      <option th:each="account: ${brokerageAccounts}"
+              th:value="'brokerage-' + ${account.getAccountNumber()}"
+              th:text="'Brokerage:' + ${account.getTitle()} + ' - $' + ${account.getBalance()}"></option>
+    </select>
+  </div>
+  <div class="p-2 my-2">
+    <label for="balance" class="form-label">Transfer Amount</label>
+    <input type="number" name="transferAmount" class="form-control" id="balance">
+  </div>
+  <div class="text-center p-2 my-2">
+    <button type="submit" class="btn btn-primary">Transfer $$</button>
+  </div>
+
+</form>

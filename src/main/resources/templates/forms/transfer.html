@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="fragments/head"></div>
+<body>
+<div th:replace="fragments/navigation"></div>
+<div th:replace="fragments/modals"></div>
+<main>
+    <div class="container">
+        <h1 class="text-end my-3">Transfer funds.</h1>
+        <hr/>
+        <div th:replace="fragments/app/forms/transfer"></div>
+    </div>
+</main>
+<div th:replace="fragments/scripts"></div>
+<div th:replace="fragments/footer"></div>
+</body>
+</html>
+

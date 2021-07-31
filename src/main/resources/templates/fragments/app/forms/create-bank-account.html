@@ -1,0 +1,32 @@
+<h2 class="my-3 text-center">Add a Bank Account</h2>
+<div class="container">
+  <form action="#" th:action="@{/bankAccounts/create}" th:object="${bankAccount}" method="post">
+    <div class="mb-3">
+      <label for="inputTitle" class="form-label">Title</label>
+      <input type="text" th:field="*{title}" class="form-control" id="inputTitle"
+             aria-describedby="inputTitleHelp">
+      <div id="inputTitleHelp" class="form-text">Provide a title for your new bank account.</div>
+    </div>
+    <div class="mb-3">
+      <label for="inputDescription" class="form-label">Description</label>
+      <textarea class="form-control" th:field="*{description}" id="inputDescription" rows="3"
+                aria-describedby="inputDescriptionHelp"></textarea>
+      <div  id="inputDescriptionHelp" class="form-text">Provide a description for your bank account
+        .</div>
+    </div>
+    <div class="mb-3">
+      <label for="inputRoutingNumber" class="form-label">Routing Number</label>
+      <textarea class="form-control" th:field="*{routingNumber}" id="inputRoutingNumber" rows="3"
+                aria-describedby="inputRoutingNumberHelp"></textarea>
+      <div  id="inputRoutingNumberHelp" class="form-text">Provide the routing number for your bank account
+        .</div>
+    </div><div class="mb-3">
+    <label for="inputAccountNumber" class="form-label">Account Number</label>
+    <textarea class="form-control" th:field="*{accountNumber}" id="inputAccountNumber" rows="3"
+              aria-describedby="inputAccountNumberHelp"></textarea>
+    <div  id="inputAccountNumberHelp" class="form-text">Provide the account number for your bank account.</div>
+  </div>
+
+    <button type="submit" class="btn btn-primary">Add Bank Account</button>
+  </form>
+</div>

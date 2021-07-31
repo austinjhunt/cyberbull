@@ -1,0 +1,81 @@
+<h2 class="text-left my-2">Accounts</h2>
+<ul class="nav nav-tabs" id="accountTabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="bankAccounts-tab" data-bs-toggle="tab" data-bs-target="#bankAccounts"
+            type="button" role="tab" aria-controls="bankAccounts" aria-selected="true">Bank
+      Accounts</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="brokerageAccounts-tab" data-bs-toggle="tab" data-bs-target="#brokerageAccounts"
+            type="button" role="tab" aria-controls="brokerageAccounts" aria-selected="false">Brokerage
+      Accounts
+    </button>
+  </li>
+</ul>
+<div class="tab-content" id="accountsTabContent">
+  <div class="tab-pane fade show active" id="bankAccounts" role="tabpanel" aria-labelledby="bankAccounts-tab">
+    <div class="text-end py-3">
+      <a class="btn btn-lg btn-success" href="/bankAccounts/create">Add Bank Account</a>
+      <a class="btn btn-lg btn-info" href="/bankAccounts/createRandom">Generate Random Bank Account</a>
+    </div>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Routing #</th>
+        <th scope="col">Account #</th>
+        <th scope="col">Balance</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="account: ${bankAccounts}">
+        <td th:text="${account.getTitle()}"></td>
+        <td th:text="${account.getDescription()}"></td>
+        <td th:text="${account.getRoutingNumber()}"></td>
+        <td th:text="${account.getAccountNumber()}"></td>
+        <td th:text="${account.getBalance()}"></td>
+        <td>
+          <button
+                  th:attr="data-accountnumber=${account.getAccountNumber()},data-currentbalance=${account.getBalance()}"
+                  onclick="updateBalance(this)" class="btn btn-success">Update Balance</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tab-pane fade" id="brokerageAccounts" role="tabpanel" aria-labelledby="brokerageAccounts-tab">
+    <div class="text-end py-3">
+      <a class="btn btn-lg btn-success" href="/brokerageAccounts/create">Add Brokerage Account</a>
+      <a class="btn btn-lg btn-info" href="/brokerageAccounts/createRandom">Generate Random Brokerage
+        Account</a>
+    </div>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Routing #</th>
+        <th scope="col">Account #</th>
+        <th scope="col">Core Position</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="account: ${brokerageAccounts}">
+        <td th:text="${account.getTitle()}"></td>
+        <td th:text="${account.getDescription()}"></td>
+        <td th:text="${account.getRoutingNumber()}"></td>
+        <td th:text="${account.getAccountNumber()}"></td>
+        <td th:text="${account.getBalance()}"></td>
+        <td>
+          <a class="btn btn-info"
+             th:href="${'/brokerageAccount/' + account.getAccountNumber()}">View
+            Account</a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
