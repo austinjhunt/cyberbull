@@ -5,26 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d023e0-9299-4649-a31a-fb516471f8b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/controllers/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/email/EmailSenderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/entity/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/token/ConfirmationToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/token/ConfirmationTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/token/ConfirmationTokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/token/IConfirmationTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/user/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/user/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/auth/user/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/auth/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/BrokerageAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/BrokerageAccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BankAccountFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BankAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/commander/ActivityCommanderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/LimitOrderOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/MarketOrderOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/OrderOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/TransferOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/position/LongPositionFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/BankAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +44,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="cyberbull" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -56,10 +54,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -83,6 +81,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/auth" />
@@ -90,7 +89,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -105,6 +104,10 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="edu.vanderbilt.cs.cyberbull.core.position" />
+      <recent name="edu.vanderbilt.cs.cyberbull.core.account.commander.account_operations" />
+      <recent name="edu.vanderbilt.cs.cyberbull.core.account.commander" />
+      <recent name="edu.vanderbilt.cs.cyberbull.core.account" />
       <recent name="edu.vanderbilt.cs.account" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">

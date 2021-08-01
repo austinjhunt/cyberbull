@@ -16,7 +16,7 @@ import edu.vanderbilt.cs.cyberbull.core.watchlist.commander.WatchListCommander;
 
 import java.util.List;
 
-public class BankAccount implements Account{
+public class BankAccount implements Account {
     private String routingNumber;
     private String accountNumber;
     private String description;
@@ -24,7 +24,7 @@ public class BankAccount implements Account{
     private ActivityCommander activityCommander;
     private double balance;
 
-    public BankAccount(){
+    public BankAccount() {
         this.title = "";
         this.description = "";
         this.accountNumber = "";
@@ -32,7 +32,7 @@ public class BankAccount implements Account{
         this.activityCommander = new ActivityCommander();
     }
 
-    public BankAccount(String title, String description, String routingNumber, String accountNumber){
+    public BankAccount(String title, String description, String routingNumber, String accountNumber) {
         this.title = title;
         this.description = description;
         this.routingNumber = routingNumber;
@@ -41,12 +41,12 @@ public class BankAccount implements Account{
     }
 
     @Override
-    public void setBalance(double balance){
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
     @Override
-    public void updateBalance(double delta){
+    public void updateBalance(double delta) {
         this.balance += delta;
     }
 
@@ -96,10 +96,12 @@ public class BankAccount implements Account{
     public String getTitle() {
         return this.title;
     }
+
     @Override
-    public double getBalance(){
+    public double getBalance() {
         return this.balance;
     }
+
     @Override
     public ActivityCommander getActivity() {
         return this.activityCommander;
