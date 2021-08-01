@@ -25,6 +25,9 @@ public class DailyHistoryVisitor implements StockHistoryVisitor {
         try {
              yahoofinance.Stock yfinanceStock = YahooFinance.get(stock.getSymbol());
              history.addAll(yfinanceStock.getHistory(Interval.DAILY));
+//            for (HistoricalQuote historicalQuote : history) {
+//                historicalQuote.
+//            }
              System.out.println(history);
         } catch (IOException e){
             System.out.println(e.getMessage());

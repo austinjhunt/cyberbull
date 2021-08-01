@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="fragments/head"></div>
+<body>
+<div th:replace="fragments/navigation"></div>
+<div th:replace="fragments/modals"></div>
+
+<main>
+    <div class="container">
+        <h1 class="text-end my-3">
+            <i class="fa fa-search"></i> Explore.</h1>
+        <hr/>
+        <!--<div class="mb-3">
+            <label for="stocksearch" class="form-label">Search for a symbol</label>
+            <input type="text" id="stocksearch" placeholder="TSLA">
+        </div>-->
+        <table id="sp500stockstable" class="table table-hover">
+            <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Business Name</th>
+                <th>Industry</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="stock: ${sp500stocks}" th:attr="data-stock-symbol='${stock.getSymbol()}'">
+                <td th:text="${stock.getSymbol()}"></td>
+                <td th:text="${stock.getBusinessName()}"></td>
+                <td th:text="${stock.getIndustry()}"></td>
+                <td>
+                    <a class="btn btn-info" th:href="'/stock/' + ${stock.getSymbol()}" th:title="'view stock ' + ${stock.getSymbol()}">View</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+<div th:replace="fragments/scripts"></div>
+<div th:replace="fragments/footer"></div>
+</body>
+</html>
+

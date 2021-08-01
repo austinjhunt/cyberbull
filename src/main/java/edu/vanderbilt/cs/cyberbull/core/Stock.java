@@ -4,6 +4,14 @@
  */
 
 package edu.vanderbilt.cs.cyberbull.core;
+
+import yahoofinance.YahooFinance;
+import yahoofinance.quotes.stock.StockQuote;
+
+import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.Arrays;
+
 /*
 A stock is a type of security, representing ownership of a publicly-traded company; stocks offer
 a way for investors to profit off of a publicly-traded company's growth (long positions),
@@ -18,6 +26,7 @@ public class Stock {
     private String industry;
     private double percentPriceChangeToday;
     private String marketSentiment;
+    private yahoofinance.Stock ticker;
 
     public double getPercentPriceChangeToday() {
         return percentPriceChangeToday;
@@ -31,8 +40,24 @@ public class Stock {
         this.symbol = symbol;
     }
 
-    public double getCurrentPrice() {
-        return currentPrice;
+    public double getCurrentPrice(){
+        double price = 0;
+        try {
+            this.ticker = YahooFinance.get(symbol);
+            price = ticker.getQuote().getPrice().doubleValue();
+        } catch(IOException e){
+            System.out.println("invalid symbol for YF ticker");
+            System.out.println(e.getMessage());
+        }
+        return price;
+    }
+
+    public StockQuote getQuote(){
+        try {
+            return YahooFinance.get(symbol).getQuote();
+        } catch(IOException e){
+            return null;
+        }
     }
 
     public void setCurrentPrice(double currentPrice) {
