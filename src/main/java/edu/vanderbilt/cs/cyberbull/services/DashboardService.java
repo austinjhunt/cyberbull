@@ -1,20 +1,29 @@
 package edu.vanderbilt.cs.cyberbull.services;
 
+import com.opencsv.exceptions.CsvException;
 import edu.vanderbilt.cs.cyberbull.core.Dashboard;
+import edu.vanderbilt.cs.cyberbull.core.Stock;
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
 import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
+import edu.vanderbilt.cs.cyberbull.core.stock_history.DailyHistoryVisitor;
+import edu.vanderbilt.cs.cyberbull.core.stock_history.MonthlyHistoryVisitor;
+import edu.vanderbilt.cs.cyberbull.core.stock_history.WeeklyHistoryVisitor;
+import edu.vanderbilt.cs.cyberbull.core.stockdb.StockDB;
 import org.springframework.stereotype.Service;
+import yahoofinance.histquotes.HistoricalQuote;
 
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
 public class DashboardService {
     private final Dashboard dashboard;
     private String activeError;
-
+    private StockDB stockdb;
     public String getActiveError(){
         return this.activeError;
     }
@@ -25,9 +34,18 @@ public class DashboardService {
         this.activeError =
                 "Message: \n" + activeError.getMessage() + "\nStack Trace: \n" + sw.toString();
     }
-    public DashboardService(){
+    public DashboardService() throws IOException, CsvException {
         this.dashboard = new Dashboard();
+        this.stockdb = new StockDB();
     }
+
+    public List<Stock> getSP500(){
+        return this.stockdb.getSP500();
+    }
+    public Optional<Stock> getStock(String symbol){
+        return this.stockdb.getStock(symbol);
+    }
+
     public List<Account> getBrokerageAccounts(){
         return this.dashboard.getBrokerageAccountList();
     }
@@ -67,6 +85,20 @@ public class DashboardService {
     public boolean removeBrokerageAccount(String accountNumber){
         return this.dashboard.removeBrokerageAccount(accountNumber);
     }
+
+    public List<HistoricalQuote> getDailyStockHistory(Stock stock){
+        DailyHistoryVisitor visitor = new DailyHistoryVisitor();
+        return visitor.visit(stock);
+    }
+    public List<HistoricalQuote> getWeeklyStockHistory(Stock stock){
+        WeeklyHistoryVisitor visitor = new WeeklyHistoryVisitor();
+        return visitor.visit(stock);
+    }
+    public List<HistoricalQuote> getMonthlyStockHistory(Stock stock){
+        MonthlyHistoryVisitor visitor = new MonthlyHistoryVisitor();
+        return visitor.visit(stock);
+    }
+
 
     public void transferFunds(String from, String to, double amount) throws InsufficientFundsException,
             NullPointerException  {
