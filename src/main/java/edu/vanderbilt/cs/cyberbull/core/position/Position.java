@@ -51,7 +51,7 @@ public class Position {
         this.currentValue = currentValue;
     }
     public double getCurrentValue(){
-        return this.currentValue;
+        return stock.getCurrentPrice() * quantity;
     }
 
     public Stock getStock() {

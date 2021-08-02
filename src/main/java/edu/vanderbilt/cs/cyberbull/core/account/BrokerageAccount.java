@@ -36,6 +36,29 @@ public class BrokerageAccount implements Account{
     private String routingNumber;
     private String accountNumber;
 
+    public BrokerageAccount(){
+        this.title = "";
+        this.description = "";
+        this.accountNumber = "";
+        this.routingNumber = "";
+        this.activityCommander = new ActivityCommander();
+        this.watchListCommander = new WatchListCommander();
+        this.watchLists = new ArrayList<>();
+        this.watchListFactory = new WatchListFactory();
+        this.portfolio = new Portfolio();
+    }
+
+    public BrokerageAccount(String title, String description, String routingNumber, String accountNumber){
+        this.title = title;
+        this.description = description;
+        this.routingNumber = routingNumber;
+        this.accountNumber = accountNumber;
+        this.activityCommander = new ActivityCommander();
+        this.watchListCommander = new WatchListCommander();
+        this.watchLists = new ArrayList<>();
+        this.watchListFactory = new WatchListFactory();
+        this.portfolio = new Portfolio();
+    }
     public void setTitle(String title) {
         this.title = title;
     }
@@ -52,28 +75,6 @@ public class BrokerageAccount implements Account{
         this.accountNumber = accountNumber;
     }
 
-    public BrokerageAccount(){
-        this.title = "";
-        this.description = "";
-        this.accountNumber = "";
-        this.routingNumber = "";
-        this.activityCommander = new ActivityCommander();
-        this.watchListCommander = new WatchListCommander();
-        this.watchLists = new ArrayList<>();
-        this.watchListFactory = new WatchListFactory();
-    }
-
-    public BrokerageAccount(String title, String description, String routingNumber, String accountNumber){
-        this.title = title;
-        this.description = description;
-        this.routingNumber = routingNumber;
-        this.accountNumber = accountNumber;
-        this.activityCommander = new ActivityCommander();
-        this.watchListCommander = new WatchListCommander();
-        this.watchLists = new ArrayList<>();
-        this.watchListFactory = new WatchListFactory();
-
-    }
     @Override
     public double getBalance() {
         return this.corePosition;
@@ -130,6 +131,9 @@ public class BrokerageAccount implements Account{
         this.watchLists.add(
                 this.watchListFactory.createWatchList(watchListName)
         );
+    }
+    public void addWatchlist(WatchList watchList) {
+        this.watchLists.add(watchList);
     }
 
     public boolean addStockToWatchList(Stock stock, WatchList watchList){

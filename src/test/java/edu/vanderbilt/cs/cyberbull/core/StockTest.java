@@ -1,64 +1,58 @@
 package edu.vanderbilt.cs.cyberbull.core;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class StockTest {
+    protected static Stock stock;
 
-    @Test
-    void getPercentPriceChangeToday() {
+    @BeforeAll
+    static void setUp(){
+        stock = new Stock("TSLA");
     }
 
-    @Test
-    void setPercentPriceChangeToday() {
-    }
 
     @Test
     void getCurrentPrice() {
-    }
-
-    @Test
-    void setCurrentPrice() {
+        assertTrue(stock.getCurrentPrice() > 0);
     }
 
     @Test
     void getSymbol() {
-    }
-
-    @Test
-    void setSymbol() {
+        assertTrue(stock.getSymbol().equals("TSLA"));
     }
 
     @Test
     void getBusinessName() {
+        stock.setBusinessName("Tesla");
+        assertTrue(stock.getBusinessName().equals("Tesla"));
     }
 
     @Test
     void setBusinessName() {
+        stock.setBusinessName("Tesla");
+        assertTrue(stock.getBusinessName().equals("Tesla"));
     }
 
     @Test
     void getIndustry() {
+        stock.setIndustry("Consumer Discretionary");
+        assertTrue(stock.getIndustry().equals("Consumer Discretionary"));
     }
 
     @Test
     void setIndustry() {
-    }
-
-    @Test
-    void getMarketSentiment() {
-    }
-
-    @Test
-    void setMarketSentiment() {
+        stock.setIndustry("Consumer Discretionary");
+        assertTrue(stock.getIndustry().equals("Consumer Discretionary"));
     }
 
     @Test
     void compareCurrentPrice() {
+        Stock apple = new Stock("AAPL");
+        assertTrue(Stock.compareCurrentPrice(apple,stock) < 0);
     }
 
-    @Test
-    void comparePercentPriceChangeToday() {
-    }
 }

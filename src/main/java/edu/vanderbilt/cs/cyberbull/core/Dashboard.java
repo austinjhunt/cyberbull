@@ -53,6 +53,13 @@ public class Dashboard {
         return this.brokerageAccountList.removeIf(brokerageAccount -> brokerageAccount.getAccountNumber().equals(accountNumber));
     }
 
+    public void clearBrokerageAccountList(){
+        brokerageAccountList.clear();
+    }
+    public void clearBankAccountList(){
+        bankAccountList.clear();
+    }
+
     public boolean addRandomBrokerageAccount(){
         return this.brokerageAccountList.add(
                 brokerageAccountFactory.createRandomAccount()

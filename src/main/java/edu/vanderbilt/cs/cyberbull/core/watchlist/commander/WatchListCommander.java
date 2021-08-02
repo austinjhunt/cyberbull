@@ -19,6 +19,10 @@ public class WatchListCommander {
         return this.operations;
     }
 
+    public void clearOperations(){
+        operations.clear();
+    }
+
     public boolean executeOperation(WatchListOperation operation, boolean saveOperation){
         if (saveOperation) {
             operations.add(operation);

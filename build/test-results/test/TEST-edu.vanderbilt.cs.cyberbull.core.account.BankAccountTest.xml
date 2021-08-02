@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2021-08-02T01:06:31" hostname="huntaj-imac.localdomain" time="0.017">
+  <properties/>
+  <testcase name="getAccountNumber()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.002"/>
+  <testcase name="updateBalance()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.001"/>
+  <testcase name="setBalance()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.001"/>
+  <testcase name="setRoutingNumber()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.001"/>
+  <testcase name="setDescription()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.001"/>
+  <testcase name="setActivity()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.001"/>
+  <testcase name="setAccountNumber()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.0"/>
+  <testcase name="getActivity()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.0"/>
+  <testcase name="getBalance()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.001"/>
+  <testcase name="getRoutingNumber()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.001"/>
+  <testcase name="setTitle()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.001"/>
+  <testcase name="getDescription()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.0"/>
+  <testcase name="getTitle()" classname="edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
