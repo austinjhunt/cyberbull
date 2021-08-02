@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-02T01:48:12" hostname="huntaj-imac.localdomain" time="0.009">
+  <properties/>
+  <testcase name="removePosition()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.005"/>
+  <testcase name="addPosition()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.001"/>
+  <testcase name="getPositions()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
