@@ -5,105 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d023e0-9299-4649-a31a-fb516471f8b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/stockdb/StockDBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/CyberbullApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/CyberbullApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/BankAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/BankAccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/BrokerageAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/BrokerageAccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/DashboardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/ErrorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/ErrorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/ExploreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/ExploreController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/FragmentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/FragmentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/StockController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/StockController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/TransferController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/TransferController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/WatchListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/WatchListController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/Dashboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/Portfolio.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/Portfolio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/Stock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/AccountFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/AccountFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BankAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BankAccountFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BankAccountFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/ActivityCommander.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/ActivityCommander.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/AccountOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/AccountOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/LimitOrderOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/LimitOrderOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/MarketOrderOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/MarketOrderOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/OrderOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/OrderOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/TransferOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/TransferOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/exceptions/InsufficientFundsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/exceptions/InsufficientFundsException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/LongPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/LongPosition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/LongPositionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/LongPositionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/PositionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/PositionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/ShortPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/ShortPosition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/ShortPositionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/ShortPositionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/random/RandomBankAccountTitleFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/random/RandomBankAccountTitleFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/random/RandomBrokerageAccountTitleFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/random/RandomBrokerageAccountTitleFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/random/RandomPhraseFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/random/RandomPhraseFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/random/RandomUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/random/RandomUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/random/RandomWatchListTitleFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/random/RandomWatchListTitleFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/securities/Debt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/securities/Debt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/securities/Derivative.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/securities/Derivative.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/securities/Equity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/securities/Equity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/securities/Security.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/securities/Security.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/stock_history/DailyHistoryVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/stock_history/DailyHistoryVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/stock_history/MonthlyHistoryVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/stock_history/MonthlyHistoryVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/stock_history/StockHistoryVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/stock_history/StockHistoryVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/stock_history/WeeklyHistoryVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/stock_history/WeeklyHistoryVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/stockdb/StockDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/stockdb/StockDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/WatchList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/WatchList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/WatchListFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/WatchListFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListAddOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListAddOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListCommander.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListCommander.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListRemoveOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListRemoveOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/services/DashboardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/services/DashboardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/Portfolio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/TransferOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/TransferOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/position/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/position/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/watchlist/WatchList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/watchlist/WatchList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListCommander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListCommander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/DashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/DashboardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/PortfolioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/PortfolioTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/StockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/StockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BankAccountFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BankAccountFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BankAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BankAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/commander/ActivityCommanderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/commander/ActivityCommanderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/position/LongPositionFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/position/LongPositionFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/position/PositionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/position/PositionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/position/ShortPositionFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/position/ShortPositionFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/random/RandomBankAccountTitleFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/random/RandomBankAccountTitleFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/random/RandomBrokerageAccountTitleFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/random/RandomBrokerageAccountTitleFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/random/RandomUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/random/RandomUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/random/RandomWatchListTitleFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/random/RandomWatchListTitleFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/stock_history/DailyHistoryVisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/stock_history/DailyHistoryVisitorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/stock_history/MonthlyHistoryVisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/stock_history/MonthlyHistoryVisitorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/stock_history/WeeklyHistoryVisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/stock_history/WeeklyHistoryVisitorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/watchlist/WatchListFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/watchlist/WatchListFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/watchlist/WatchListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/watchlist/WatchListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListAddOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListAddOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListCommanderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListCommanderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListRemoveOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/watchlist/commander/WatchListRemoveOperationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.DashboardTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.PortfolioTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.StockTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.account.BankAccountFactoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountFactoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.account.commander.ActivityCommanderTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.position.LongPositionFactoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.position.PositionTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.position.ShortPositionFactoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.random.RandomBankAccountTitleFactoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.random.RandomBrokerageAccountTitleFactoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.random.RandomUtilTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.random.RandomWatchListTitleFactoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.stock_history.DailyHistoryVisitorTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.stock_history.MonthlyHistoryVisitorTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.stock_history.WeeklyHistoryVisitorTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.stockdb.StockDBTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListFactoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.watchlist.commander.WatchListAddOperationTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.watchlist.commander.WatchListCommanderTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.watchlist.commander.WatchListRemoveOperationTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.account.commander.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.account.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.position.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.random.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.stock_history.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.stockdb.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.watchlist.commander.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.watchlist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.DashboardTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.PortfolioTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.StockTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.account.BankAccountFactoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.account.BankAccountTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountFactoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.account.commander.ActivityCommanderTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.position.LongPositionFactoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.position.PositionTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.position.ShortPositionFactoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.random.RandomBankAccountTitleFactoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.random.RandomBrokerageAccountTitleFactoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.random.RandomUtilTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.random.RandomWatchListTitleFactoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.stock_history.DailyHistoryVisitorTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.stock_history.MonthlyHistoryVisitorTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.stock_history.WeeklyHistoryVisitorTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.stockdb.StockDBTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListFactoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.watchlist.commander.WatchListAddOperationTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.watchlist.commander.WatchListCommanderTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.watchlist.commander.WatchListRemoveOperationTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/CyberbullApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/CyberbullApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +176,7 @@
       <recent name="edu.vanderbilt.cs.history" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ActivityCommanderTest">
+  <component name="RunManager" selected="Gradle.CyberbullApplicationTests">
     <configuration name="ActivityCommanderTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -270,12 +240,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BrokerageAccountFactoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CyberbullApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountFactoryTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;edu.vanderbilt.cs.cyberbull.CyberbullApplicationTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -291,12 +261,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BrokerageAccountTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'edu.vanderbilt.cs.cyberbull.core'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;edu.vanderbilt.cs.cyberbull.core.*&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -314,11 +284,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CyberbullApplicationTests" />
+        <item itemvalue="Gradle.Tests in 'edu.vanderbilt.cs.cyberbull.core'" />
         <item itemvalue="Gradle.ActivityCommanderTest" />
         <item itemvalue="Gradle.BankAccountFactoryTest" />
         <item itemvalue="Gradle.BankAccountTest" />
-        <item itemvalue="Gradle.BrokerageAccountFactoryTest" />
-        <item itemvalue="Gradle.BrokerageAccountTest" />
       </list>
     </recent_temporary>
   </component>
