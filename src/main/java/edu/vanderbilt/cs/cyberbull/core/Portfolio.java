@@ -27,5 +27,8 @@ public class Portfolio {
     public boolean removePosition(Position position){
         return this.positionList.remove(position);
     }
+    public List<Position> getPositions(){
+        return positionList;
+    }
 
 }

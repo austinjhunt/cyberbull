@@ -49,6 +49,9 @@ public class WatchList {
         this.id = RandomUtil.randomNumberString(10);
     }
 
+    public void clear(){
+        this.stocks.clear();
+    }
     public boolean add(Stock stock){
         return this.stocks.add(stock);
     }
