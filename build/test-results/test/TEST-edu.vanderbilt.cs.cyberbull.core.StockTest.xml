@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.StockTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-08-02T01:48:12" hostname="huntaj-imac.localdomain" time="0.125">
+  <properties/>
+  <testcase name="getIndustry()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.0"/>
+  <testcase name="getCurrentPrice()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.026"/>
+  <testcase name="compareCurrentPrice()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.093"/>
+  <testcase name="getSymbol()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.001"/>
+  <testcase name="getBusinessName()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.0"/>
+  <testcase name="setBusinessName()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.0"/>
+  <testcase name="setIndustry()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.0"/>
+  <system-out><![CDATA[21:48:12.680 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+21:48:12.705 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627675203
+21:48:12.706 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+21:48:12.707 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+21:48:12.769 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627675202
+21:48:12.770 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
+21:48:12.770 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
+21:48:12.770 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+21:48:12.798 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627675203
+21:48:12.798 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2021-08-02T01:48:12" hostname="huntaj-imac.localdomain" time="0.019">
+  <properties/>
+  <testcase name="getAccountNumber()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.001"/>
+  <testcase name="updateBalance()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.001"/>
+  <testcase name="setBalance()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.001"/>
+  <testcase name="setPortfolio()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.001"/>
+  <testcase name="addStockToWatchList()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.001"/>
+  <testcase name="setRoutingNumber()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.001"/>
+  <testcase name="addWatchList()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.001"/>
+  <testcase name="addWatchlist()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.0"/>
+  <testcase name="getWatchlists()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.0"/>
+  <testcase name="removeStockFromWatchlist()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.0"/>
+  <testcase name="setDescription()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.0"/>
+  <testcase name="setActivity()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.0"/>
+  <testcase name="setAccountNumber()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.001"/>
+  <testcase name="getActivity()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.001"/>
+  <testcase name="getBalance()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.0"/>
+  <testcase name="getPortfolio()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.001"/>
+  <testcase name="getRoutingNumber()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.0"/>
+  <testcase name="setTitle()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.0"/>
+  <testcase name="getDescription()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.0"/>
+  <testcase name="getTitle()" classname="edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
