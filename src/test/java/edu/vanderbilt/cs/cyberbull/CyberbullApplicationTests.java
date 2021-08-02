@@ -25,7 +25,6 @@ class CyberbullApplicationTests {
 	@Autowired
 	private WatchListController watchListController;
 
-
 	@Test
 	void contextLoads() {
 		assertNotEquals(null, dashboardController);
@@ -36,7 +35,6 @@ class CyberbullApplicationTests {
 		assertNotEquals(null, stockController);
 		assertNotEquals(null, transferController);
 		assertNotEquals(null, watchListController);
-
 	}
 
 }
