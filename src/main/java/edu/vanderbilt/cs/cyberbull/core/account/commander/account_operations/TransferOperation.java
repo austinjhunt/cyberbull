@@ -6,6 +6,7 @@
 package edu.vanderbilt.cs.cyberbull.core.account.commander.account_operations;
 
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
+import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
 
 import java.time.LocalDateTime;
 
@@ -28,11 +29,13 @@ public class TransferOperation implements  AccountOperation {
     }
     public void execute(){
         try{
+            // this will only be reached if the source balance >= transfer amount. no need to check.
             this.fromAccount.updateBalance(amount * -1);
             this.toAccount.updateBalance(amount);
             this.successful = true;
             // fixme: add transfer activity to both accounts
-        } catch (Exception e){
+        }
+        catch (Exception e){
             System.out.println(e.getMessage());
             this.successful = false;
         }
