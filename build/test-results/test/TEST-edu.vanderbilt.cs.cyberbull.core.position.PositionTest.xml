@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-08-04T18:46:45" hostname="huntaj-imac.localdomain" time="0.657">
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-08-04T19:18:10" hostname="huntaj-imac.localdomain" time="0.735">
   <properties/>
-  <testcase name="getCurrentValue()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.651"/>
-  <testcase name="setQuantity()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.002"/>
-  <testcase name="getQuantity()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.001"/>
-  <testcase name="updateQuantityByValue()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.0"/>
-  <testcase name="getStock()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.0"/>
-  <system-out><![CDATA[14:46:45.750 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-14:46:46.231 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628102805
-14:46:46.232 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+  <testcase name="getCurrentValue()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.728"/>
+  <testcase name="setQuantity()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.001"/>
+  <testcase name="getQuantity()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.0"/>
+  <testcase name="updateQuantityByValue()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.001"/>
+  <testcase name="getStock()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.001"/>
+  <system-out><![CDATA[15:18:10.572 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+15:18:11.055 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628104688
+15:18:11.056 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

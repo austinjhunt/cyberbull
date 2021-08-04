@@ -10,7 +10,7 @@ class PositionFactoryImplTest {
     private PositionFactory positionFactory;
     @BeforeEach
     void setUp(){
-        positionFactory = new PositionFactoryImpl();
+        positionFactory = new IPositionFactory();
     }
     @Test
     void createPosition() {
