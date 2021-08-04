@@ -2,11 +2,9 @@
 ![cyberbull](cyberbull.png)
 This is a Spring web application called Cyberbull Investment Simulator built for a Vanderbilt University CS5278 
 (Principles of Software Engineering) final project. It's a reflection of my personal interest in the stock market 
-and is an exploration of many [Gang of Four design 
-patterns](https://en.wikipedia.org/wiki/Design_Patterns) in the context of stocks and brokerage account management. 
-The application makes heavy use of **object-oriented** programming techniques for **structure and organization**, as 
-well as **functional** programming techniques to draw **clear connections** between the **domain intent** (brokerage account 
-management) and the **computation**.
+and is an exploration of many [Gang of Four design patterns](https://en.wikipedia.org/wiki/Design_Patterns) in the context of stocks and brokerage account management. The application makes heavy use of **object-oriented** programming techniques for **structure and organization**, as well as **functional** programming techniques to draw **clear connections** between the **domain intent** (brokerage account management) and the **computation**. It also largely depends on the [this Java library](https://github.com/sstrickx/yahoofinance-api) for interacting with the Yahoo Finance API, plus [this free News API](https://newsapi.org/) for collecting current news filtered by business names. 
+**Note: the underlying stock database for this application is generated using [this CSV file](src/main/resources/static/csv/sp500.csv) which only includes the S&P 500.**
+
 ## First, the Object Oriented...
 ### What design patterns are used? 
 #### [The Command Pattern](https://refactoring.guru/design-patterns/command) 
@@ -51,26 +49,22 @@ base (found in the core/ folder) from the client, or the controller. The Dashboa
 serves largely as this bridge of communication between the simple front end and complex back end by persistently 
 storing backend implementations as attributes (i.e. *dependency injection*) which get called upon to handle front end 
 requests. The dashboard service is the most persistent object across the controllers, allowing state to be shared and maintained. 
-
-of an ["AccountOperation"](src/main/java/edu/vanderbilt/cs/account/commander/AccountOperation.java) interface; an 
-account operation could be a market or limit order of some quantity of shares of a stock, or perhaps a fund transfer 
-to or from another account. These concrete operation implementations are represented with the 
-following classes: 
-* ["LimitOrderOperation"](src/main/java/edu/vanderbilt/cs/account/commander/LimitOrderOperation.java) - representing 
-  a limit order, or an order to buy or sell some shares of a stock at either the limit price or better (lower if 
-  buying, higher if selling)
-* ["MarketOrderOperation"](src/main/java/edu/vanderbilt/cs/account/commander/MarketOrderOperation.java) - 
-  representing a market order, or an order to buy or sell a stock immediately (now if market is open, or at market 
-  open if currently closed)
-* ["TransferOperation"](src/main/java/edu/vanderbilt/cs/account/commander/TransferOperation.java) - representing a 
-  fund transfer between accounts (most generally between a brokerage account and a bank account)
-  
+ 
 #### [The Visitor Pattern](https://refactoring.guru/design-patterns/visitor)
 The visitor pattern, as mentioned in the link above, "lets you separate algorithms from the objects on which they 
 operate". In this project, the visitor pattern is used to easily provide multiple methods of accessing price history 
-of a stock. Specifically, the visitor (one of the concrete implementations of the [StockHistoryVisitor](src/main/java/edu/vanderbilt/cs/history/StockHistoryVisitor.java) interface) generates the price history of a given 
+of a stock. Specifically, the visitor (one of the concrete implementations of the [StockHistoryVisitor](src/main/java/edu/vanderbilt/cs/cyberbull/core/stock_history/StockHistoryVisitor.java) interface) generates the price history of a given 
 stock at an interval determined by the type of visitor, e.g. daily, monthly, or weekly. That is, different types of 
 visitors "visit" the historical data to generate a differently-intervaled lists of historical price points. 
+
+#### [The Proxy Pattern](https://refactoring.guru/design-patterns/proxy)
+As discussed in the link above, a proxy controls access to some original object, allowing you to perform something either before or after the request reaches that original object. In the context of this project, the proxy pattern comes to life with the [Stock](src/main/java/edu/vanderbilt/cs/cyberbull/core/Stock.java) class. Why? Well, Cyberbull is largely dependent on YahooFinance, specifically YahooFinance logic specific to certain stocks, e.g. opens, closes, volumes, general price information, etc. The proxy pattern is seen in how the internal Stock class is used to interact with and process information from the Yahoo Finance API. It's also seen in the use of the [News Finder](src/main/java/edu/vanderbilt/cs/cyberbull/core/news/NewsFinder.java) which utilizes the SDK for [this free news API]((https://newsapi.org/)) to send customized requests to filter out news and handle custom formatting of the responses from that API. 
+
+#### [The Chain of Responsibility Pattern](https://refactoring.guru/design-patterns/chain-of-responsibility)
+This is pretty typical of web applications where requests get routed from a front end down through a chain of backend modules. 
+
+#### [The Iterator Pattern](https://refactoring.guru/design-patterns/iterator)
+The iterator pattern is used to iterate over historical quotes of a stock and build a stringified JSON object. Also, the iterator() method of the CSVReader class within the Stock Database class ([StockDB]((src/main/java/edu/vanderbilt/cs/cyberbull/core/stockdb/StockDB.java)) is used to handle the iterative parsing of a static CSV file of the S&P 500 stocks. This is the class the forms the underlying primary database of stocks for the application. *Note: it currently only includes the S&P 500 Stocks but can be extended.*
 
 ## Now, the Functional Programming...
 
