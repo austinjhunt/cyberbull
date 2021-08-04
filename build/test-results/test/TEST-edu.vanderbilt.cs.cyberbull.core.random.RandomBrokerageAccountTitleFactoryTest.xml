@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.vanderbilt.cs.cyberbull.core.random.RandomBrokerageAccountTitleFactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-04T17:55:15" hostname="huntaj-imac.localdomain" time="0.0">
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.random.RandomBrokerageAccountTitleFactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-04T18:40:26" hostname="huntaj-imac.localdomain" time="0.001">
   <properties/>
-  <testcase name="generateRandomPhrase()" classname="edu.vanderbilt.cs.cyberbull.core.random.RandomBrokerageAccountTitleFactoryTest" time="0.0"/>
+  <testcase name="generateRandomPhrase()" classname="edu.vanderbilt.cs.cyberbull.core.random.RandomBrokerageAccountTitleFactoryTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-04T17:55:13" hostname="huntaj-imac.localdomain" time="0.904">
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-04T18:40:25" hostname="huntaj-imac.localdomain" time="0.122">
   <properties/>
-  <testcase name="removePosition()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.857"/>
-  <testcase name="addPosition()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.022"/>
-  <testcase name="getPositions()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.023"/>
-  <system-out><![CDATA[13:55:14.248 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-13:55:14.761 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628099707
-13:55:14.762 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+  <testcase name="removePosition()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.067"/>
+  <testcase name="addPosition()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.029"/>
+  <testcase name="getPositions()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.024"/>
+  <system-out><![CDATA[14:40:25.884 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+14:40:25.911 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628102419
+14:40:25.911 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
 Position list size: 1
-[Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 13:55:13.969180 and last updated on 2021-08-04 at 13:55:13.970496]
-Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 13:55:13.969180 and last updated on 2021-08-04 at 13:55:13.970496
+[Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 14:40:25.884362 and last updated on 2021-08-04 at 14:40:25.884383]
+Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 14:40:25.884362 and last updated on 2021-08-04 at 14:40:25.884383
 TSLA
-13:55:14.784 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-13:55:14.804 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628099707
-13:55:14.805 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+14:40:25.927 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+14:40:25.950 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628102419
+14:40:25.951 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
 Position list size: 0
 []
-13:55:14.818 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-13:55:14.838 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628099707
-13:55:14.838 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+14:40:25.952 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+14:40:25.980 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628102419
+14:40:25.980 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
 Position list size: 1
-[Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 13:55:14.818263 and last updated on 2021-08-04 at 13:55:14.818298]
-Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 13:55:14.818263 and last updated on 2021-08-04 at 13:55:14.818298
+[Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 14:40:25.952158 and last updated on 2021-08-04 at 14:40:25.952178]
+Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 14:40:25.952158 and last updated on 2021-08-04 at 14:40:25.952178
 TSLA
-13:55:14.840 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-13:55:14.861 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628099707
-13:55:14.861 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+14:40:25.982 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+14:40:26.005 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628102419
+14:40:26.005 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
 Position list size: 2
-[Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 13:55:14.818263 and last updated on 2021-08-04 at 13:55:14.818298, Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 13:55:14.840491 and last updated on 2021-08-04 at 13:55:14.840513]
-Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 13:55:14.818263 and last updated on 2021-08-04 at 13:55:14.818298
-Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 13:55:14.840491 and last updated on 2021-08-04 at 13:55:14.840513
+[Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 14:40:25.952158 and last updated on 2021-08-04 at 14:40:25.952178, Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 14:40:25.982301 and last updated on 2021-08-04 at 14:40:25.982322]
+Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 14:40:25.952158 and last updated on 2021-08-04 at 14:40:25.952178
+Position: 10.0 shares of stock TSLA opened on 2021-08-04 at 14:40:25.982301 and last updated on 2021-08-04 at 14:40:25.982322
 TSLA
 TSLA
 ]]></system-out>

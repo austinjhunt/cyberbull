@@ -18,21 +18,18 @@ class PortfolioTest {
         account.updateCorePosition(5000000);
         portfolio = new Portfolio(account);
     }
-
     @Test
     void addPosition() throws InsufficientFundsException {
         Position pos = new Position(new Stock("TSLA"), 10);
         portfolio.addPosition(pos);
         assertTrue(portfolio.getPositions().contains(pos));
     }
-
     @Test
     void getPositions() throws InsufficientFundsException {
         Position pos = new Position(new Stock("TSLA"), 10);
         portfolio.addPosition(pos);
         assertTrue(portfolio.getPositions().contains(pos));
     }
-
     @Test
     void removePosition() throws InsufficientFundsException {
         Position pos = new Position(new Stock("TSLA"), 10);

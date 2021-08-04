@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.094s</div>
+<div class="counter">0.110s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">visit()</td>
-<td class="success">0.094s</td>
+<td class="success">0.110s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,59 +87,59 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>13:55:15.587 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-13:55:15.606 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628099707
-13:55:15.607 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-13:55:15.607 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Sending request: https://query1.finance.yahoo.com/v7/finance/download/TSLA?period1=1596556800&amp;period2=1628092800&amp;interval=5d&amp;crumb=xNN%2FLn5fxDX
-13:55:15.667 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-08-04,299.002014,305.481995,292.399994,297.399994,297.399994,42075000
-13:55:15.668 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-08-14,332.997986,333.760010,325.328003,330.141998,330.141998,62888000
-13:55:15.668 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-08-19,373.000000,382.200012,368.242004,375.705994,375.705994,61026500
-13:55:15.668 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-08-24,425.256012,425.799988,385.503998,402.839996,402.839996,100318000
-13:55:15.669 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-03,407.230011,431.799988,402.000000,407.000000,407.000000,87596100
-13:55:15.669 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-08,356.000000,368.739990,329.880005,330.209991,330.209991,115465700
-13:55:15.669 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-18,447.940002,451.000000,428.799988,442.149994,442.149994,86406800
-13:55:15.669 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-23,405.160004,412.149994,375.880005,380.359985,380.359985,95074200
-13:55:15.670 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-28,424.619995,428.079987,415.549988,421.200012,421.200012,49719600
-13:55:15.670 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-10-08,438.440002,439.000000,425.299988,425.920013,425.920013,40421100
-13:55:15.670 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-10-13,443.350006,448.890015,436.600006,446.649994,446.649994,34463700
-13:55:15.670 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-10-23,421.839996,422.890015,407.380005,420.630005,420.630005,33717000
-13:55:15.671 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-10-28,416.480011,418.600006,406.000000,406.019989,406.019989,25451400
-13:55:15.671 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-11-02,394.000000,406.980011,392.299988,400.510010,400.510010,29021100
-13:55:15.671 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-11-12,415.049988,423.000000,409.519989,411.760010,411.760010,19855100
-13:55:15.671 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-11-17,460.170013,462.000000,433.010010,441.609985,441.609985,61188300
-13:55:15.672 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-11-27,581.159973,598.780029,578.450012,585.760010,585.760010,37561100
-13:55:15.672 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-12-02,556.440002,571.539978,541.210022,568.820007,568.820007,47775700
-13:55:15.672 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-12-07,604.919983,648.789978,603.049988,641.760010,641.760010,56309700
-13:55:15.673 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-12-17,628.190002,658.820007,619.500000,655.900024,655.900024,56270100
-13:55:15.673 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-12-22,648.000000,649.880005,614.229980,640.340027,640.340027,51716000
-13:55:15.673 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-01-06,758.489990,774.000000,749.099976,755.979980,755.979980,44700000
-13:55:15.673 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-01-11,849.400024,854.429993,803.619995,811.190002,811.190002,59301600
-13:55:15.674 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-01-21,855.000000,855.719971,841.419983,844.989990,844.989990,20521100
-13:55:15.674 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-01-26,891.380005,895.900024,871.599976,883.090027,883.090027,23131600
-13:55:15.674 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-02-05,845.000000,864.770020,838.969971,852.229980,852.229980,18566600
-13:55:15.674 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-02-10,843.640015,844.820007,800.020020,804.820007,804.820007,36216100
-13:55:15.675 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-02-25,726.150024,737.210022,670.580017,682.219971,682.219971,39023900
-13:55:15.675 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-03-02,718.280029,721.109985,685.000000,686.440002,686.440002,23732200
-13:55:15.675 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-03-12,670.000000,694.880005,666.140015,693.729980,693.729980,33583800
-13:55:15.675 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-03-17,656.869995,703.729980,651.010010,701.809998,701.809998,40372500
-13:55:15.676 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-03-22,684.590027,699.619995,668.750000,670.000000,670.000000,39512200
-13:55:15.676 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-01,688.369995,692.419983,659.419983,661.750000,661.750000,35298400
-13:55:15.676 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-06,690.299988,696.549988,681.369995,691.619995,691.619995,28271800
-13:55:15.677 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-16,728.650024,749.409973,724.599976,739.780029,739.780029,27979500
-13:55:15.677 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-21,704.770020,744.840027,698.000000,744.119995,744.119995,31215500
-13:55:15.677 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-26,741.000000,749.299988,732.609985,738.200012,738.200012,31038500
-13:55:15.677 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-05-06,680.760010,681.020020,650.000000,663.539978,663.539978,27784600
-13:55:15.678 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-05-11,599.239990,627.099976,595.599976,617.200012,617.200012,46503900
-13:55:15.678 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-05-21,596.109985,596.679993,580.000000,580.880005,580.880005,26030600
-13:55:15.678 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-05-26,607.559998,626.169983,601.500000,619.130005,619.130005,28639300
-13:55:15.678 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-06-10,603.880005,616.590027,600.500000,610.119995,610.119995,23919600
-13:55:15.679 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-06-15,616.690002,616.789978,598.229980,599.359985,599.359985,17764100
-13:55:15.679 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-06-25,689.580017,693.809998,668.700012,671.869995,671.869995,32496700
-13:55:15.679 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-06-30,679.770020,692.809998,678.140015,679.700012,679.700012,18924900
-13:55:15.679 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-07-15,658.390015,666.140015,637.880005,650.599976,650.599976,20209600
-13:55:15.679 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-07-20,651.989990,662.390015,640.500000,660.500000,660.500000,15487100
-13:55:15.680 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-07-30,671.760010,697.530029,669.000000,687.200012,687.200012,29600500
-13:55:15.680 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-08-04,711.000000,724.900024,708.929993,712.672974,712.672974,12853572
+<pre>14:40:25.592 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+14:40:25.615 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628102419
+14:40:25.616 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+14:40:25.617 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Sending request: https://query1.finance.yahoo.com/v7/finance/download/TSLA?period1=1596556800&amp;period2=1628092800&amp;interval=5d&amp;crumb=JJDOo5.POPL
+14:40:25.686 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-08-04,299.002014,305.481995,292.399994,297.399994,297.399994,42075000
+14:40:25.686 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-08-14,332.997986,333.760010,325.328003,330.141998,330.141998,62888000
+14:40:25.687 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-08-19,373.000000,382.200012,368.242004,375.705994,375.705994,61026500
+14:40:25.688 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-08-24,425.256012,425.799988,385.503998,402.839996,402.839996,100318000
+14:40:25.688 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-03,407.230011,431.799988,402.000000,407.000000,407.000000,87596100
+14:40:25.688 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-08,356.000000,368.739990,329.880005,330.209991,330.209991,115465700
+14:40:25.688 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-18,447.940002,451.000000,428.799988,442.149994,442.149994,86406800
+14:40:25.689 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-23,405.160004,412.149994,375.880005,380.359985,380.359985,95074200
+14:40:25.689 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-28,424.619995,428.079987,415.549988,421.200012,421.200012,49719600
+14:40:25.689 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-10-08,438.440002,439.000000,425.299988,425.920013,425.920013,40421100
+14:40:25.690 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-10-13,443.350006,448.890015,436.600006,446.649994,446.649994,34463700
+14:40:25.690 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-10-23,421.839996,422.890015,407.380005,420.630005,420.630005,33717000
+14:40:25.690 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-10-28,416.480011,418.600006,406.000000,406.019989,406.019989,25451400
+14:40:25.690 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-11-02,394.000000,406.980011,392.299988,400.510010,400.510010,29021100
+14:40:25.691 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-11-12,415.049988,423.000000,409.519989,411.760010,411.760010,19855100
+14:40:25.691 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-11-17,460.170013,462.000000,433.010010,441.609985,441.609985,61188300
+14:40:25.691 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-11-27,581.159973,598.780029,578.450012,585.760010,585.760010,37561100
+14:40:25.692 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-12-02,556.440002,571.539978,541.210022,568.820007,568.820007,47775700
+14:40:25.692 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-12-07,604.919983,648.789978,603.049988,641.760010,641.760010,56309700
+14:40:25.692 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-12-17,628.190002,658.820007,619.500000,655.900024,655.900024,56270100
+14:40:25.692 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-12-22,648.000000,649.880005,614.229980,640.340027,640.340027,51716000
+14:40:25.693 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-01-06,758.489990,774.000000,749.099976,755.979980,755.979980,44700000
+14:40:25.693 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-01-11,849.400024,854.429993,803.619995,811.190002,811.190002,59301600
+14:40:25.694 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-01-21,855.000000,855.719971,841.419983,844.989990,844.989990,20521100
+14:40:25.694 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-01-26,891.380005,895.900024,871.599976,883.090027,883.090027,23131600
+14:40:25.694 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-02-05,845.000000,864.770020,838.969971,852.229980,852.229980,18566600
+14:40:25.694 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-02-10,843.640015,844.820007,800.020020,804.820007,804.820007,36216100
+14:40:25.695 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-02-25,726.150024,737.210022,670.580017,682.219971,682.219971,39023900
+14:40:25.696 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-03-02,718.280029,721.109985,685.000000,686.440002,686.440002,23732200
+14:40:25.696 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-03-12,670.000000,694.880005,666.140015,693.729980,693.729980,33583800
+14:40:25.696 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-03-17,656.869995,703.729980,651.010010,701.809998,701.809998,40372500
+14:40:25.696 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-03-22,684.590027,699.619995,668.750000,670.000000,670.000000,39512200
+14:40:25.697 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-01,688.369995,692.419983,659.419983,661.750000,661.750000,35298400
+14:40:25.697 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-06,690.299988,696.549988,681.369995,691.619995,691.619995,28271800
+14:40:25.697 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-16,728.650024,749.409973,724.599976,739.780029,739.780029,27979500
+14:40:25.698 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-21,704.770020,744.840027,698.000000,744.119995,744.119995,31215500
+14:40:25.698 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-26,741.000000,749.299988,732.609985,738.200012,738.200012,31038500
+14:40:25.698 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-05-06,680.760010,681.020020,650.000000,663.539978,663.539978,27784600
+14:40:25.698 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-05-11,599.239990,627.099976,595.599976,617.200012,617.200012,46503900
+14:40:25.699 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-05-21,596.109985,596.679993,580.000000,580.880005,580.880005,26030600
+14:40:25.699 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-05-26,607.559998,626.169983,601.500000,619.130005,619.130005,28639300
+14:40:25.699 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-06-10,603.880005,616.590027,600.500000,610.119995,610.119995,23919600
+14:40:25.699 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-06-15,616.690002,616.789978,598.229980,599.359985,599.359985,17764100
+14:40:25.700 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-06-25,689.580017,693.809998,668.700012,671.869995,671.869995,32496700
+14:40:25.700 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-06-30,679.770020,692.809998,678.140015,679.700012,679.700012,18924900
+14:40:25.700 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-07-15,658.390015,666.140015,637.880005,650.599976,650.599976,20209600
+14:40:25.700 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-07-20,651.989990,662.390015,640.500000,660.500000,660.500000,15487100
+14:40:25.701 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-07-30,671.760010,697.530029,669.000000,687.200012,687.200012,29600500
+14:40:25.701 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-08-04,711.000000,724.900024,708.929993,709.955017,709.955017,13806485
 </pre>
 </span>
 </div>
@@ -151,7 +151,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1.1</a> at Aug 4, 2021, 1:55:20 PM</p>
+<a href="http://www.gradle.org">Gradle 7.0.2</a> at Aug 4, 2021, 2:40:31 PM</p>
 </div>
 </div>
 </body>
