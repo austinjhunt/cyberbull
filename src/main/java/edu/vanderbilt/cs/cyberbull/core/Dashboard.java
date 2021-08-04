@@ -8,7 +8,7 @@ package edu.vanderbilt.cs.cyberbull.core;
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
 import edu.vanderbilt.cs.cyberbull.core.account.BankAccountFactory;
 import edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountFactory;
-import edu.vanderbilt.cs.cyberbull.core.account.commander.ActivityCommander;
+import edu.vanderbilt.cs.cyberbull.core.account.commander.AccountActivity;
 import edu.vanderbilt.cs.cyberbull.core.account.commander.account_operations.TransferOperation;
 
 import java.util.ArrayList;
@@ -24,7 +24,7 @@ public class Dashboard {
     private final List<Account> brokerageAccountList;
     private final BrokerageAccountFactory brokerageAccountFactory;
     private final BankAccountFactory bankAccountFactory;
-    private final ActivityCommander activityCommander;
+    private final AccountActivity accountActivity;
 
 
     public Dashboard(){
@@ -32,7 +32,7 @@ public class Dashboard {
         this.brokerageAccountList = new ArrayList<>();
         this.brokerageAccountFactory = new BrokerageAccountFactory();
         this.bankAccountFactory = new BankAccountFactory();
-        this.activityCommander = new ActivityCommander();
+        this.accountActivity = new AccountActivity();
     }
 
     // Create bank account with all information provided.
@@ -80,7 +80,7 @@ public class Dashboard {
     }
 
     public void transfer(Account from, Account to, double amount){
-        this.activityCommander.executeOperation(
+        this.accountActivity.executeOperation(
                 new TransferOperation(from, to, amount), true
         );
     }

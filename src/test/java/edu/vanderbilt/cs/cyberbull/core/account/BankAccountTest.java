@@ -1,8 +1,5 @@
 package edu.vanderbilt.cs.cyberbull.core.account;
 
-import edu.vanderbilt.cs.cyberbull.core.Stock;
-import edu.vanderbilt.cs.cyberbull.core.account.commander.ActivityCommander;
-import edu.vanderbilt.cs.cyberbull.core.watchlist.WatchList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -92,17 +89,5 @@ class BankAccountTest {
         assertEquals(0, account.getBalance());
         account.setBalance(500);
         assertEquals(500, account.getBalance());
-    }
-
-    @Test
-    void getActivity() {
-        assertEquals(ActivityCommander.class, account.getActivity().getClass());
-    }
-
-    @Test
-    void setActivity() {
-        ActivityCommander activityCommander = new ActivityCommander();
-        account.setActivity(activityCommander);
-        assertEquals(activityCommander, account.getActivity());
     }
 }

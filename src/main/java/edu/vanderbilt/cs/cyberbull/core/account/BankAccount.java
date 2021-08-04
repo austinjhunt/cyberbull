@@ -10,18 +10,17 @@ as a balance at any given time that can be increased or decreased via transfers 
 
 package edu.vanderbilt.cs.cyberbull.core.account;
 
-import edu.vanderbilt.cs.cyberbull.core.account.commander.ActivityCommander;
+import edu.vanderbilt.cs.cyberbull.core.portfolio.Portfolio;
 import edu.vanderbilt.cs.cyberbull.core.watchlist.WatchList;
-import edu.vanderbilt.cs.cyberbull.core.watchlist.commander.WatchListCommander;
 
 import java.util.List;
+import java.util.Optional;
 
 public class BankAccount implements Account {
     private String routingNumber;
     private String accountNumber;
     private String description;
     private String title;
-    private ActivityCommander activityCommander;
     private double balance;
 
     public BankAccount() {
@@ -29,7 +28,6 @@ public class BankAccount implements Account {
         this.description = "";
         this.accountNumber = "";
         this.routingNumber = "";
-        this.activityCommander = new ActivityCommander();
     }
 
     public BankAccount(String title, String description, String routingNumber, String accountNumber) {
@@ -37,7 +35,6 @@ public class BankAccount implements Account {
         this.description = description;
         this.routingNumber = routingNumber;
         this.accountNumber = accountNumber;
-        this.activityCommander = new ActivityCommander();
     }
 
     @Override
@@ -75,6 +72,17 @@ public class BankAccount implements Account {
     public void addWatchlist(String watchListName) {
         //no-op
     }
+    @Override
+    public Optional<WatchList> getWatchListById(String watchListId){
+        //no-op
+        return null;
+    }
+
+    @Override
+    public Portfolio getPortfolio(){
+        //no-op
+        return null;
+    }
 
     public void setRoutingNumber(String routingNumber) {
         this.routingNumber = routingNumber;
@@ -102,12 +110,4 @@ public class BankAccount implements Account {
         return this.balance;
     }
 
-    @Override
-    public ActivityCommander getActivity() {
-        return this.activityCommander;
-    }
-
-    public void setActivity(ActivityCommander activityCommander) {
-        this.activityCommander = activityCommander;
-    }
-}
+   }

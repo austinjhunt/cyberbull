@@ -1,10 +1,12 @@
 package edu.vanderbilt.cs.cyberbull.services;
 
+import com.kwabenaberko.newsapilib.models.Article;
 import com.opencsv.exceptions.CsvException;
 import edu.vanderbilt.cs.cyberbull.core.Dashboard;
 import edu.vanderbilt.cs.cyberbull.core.Stock;
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
 import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
+import edu.vanderbilt.cs.cyberbull.core.news.NewsFinder;
 import edu.vanderbilt.cs.cyberbull.core.stock_history.DailyHistoryVisitor;
 import edu.vanderbilt.cs.cyberbull.core.stock_history.MonthlyHistoryVisitor;
 import edu.vanderbilt.cs.cyberbull.core.stock_history.WeeklyHistoryVisitor;
@@ -15,6 +17,7 @@ import yahoofinance.histquotes.HistoricalQuote;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -23,6 +26,8 @@ import java.util.stream.Collectors;
 public class DashboardService {
     private final Dashboard dashboard;
     private String activeError;
+    private NewsFinder newsFinder;
+    private List<Article> newsCache;
     private StockDB stockdb;
     public String getActiveError(){
         return this.activeError;
@@ -31,12 +36,14 @@ public class DashboardService {
         StringWriter sw = new StringWriter();
         PrintWriter pw = new PrintWriter(sw);
         activeError.printStackTrace(pw);
-        this.activeError =
-                "Message: \n" + activeError.getMessage() + "\nStack Trace: \n" + sw.toString();
+        this.activeError = activeError.getClass().toString() + " ------ " +
+                "Message: \n" + activeError.getMessage() + "-----Stack Trace: " + sw.toString();
     }
     public DashboardService() throws IOException, CsvException {
         this.dashboard = new Dashboard();
         this.stockdb = new StockDB();
+        this.newsFinder = new NewsFinder();
+        this.newsCache = new ArrayList<>();
     }
 
     public List<Stock> getSP500(){
@@ -99,6 +106,12 @@ public class DashboardService {
         return visitor.visit(stock);
     }
 
+    public List<Article> getBusinessNews(String businessName){
+        if (newsCache.size() == 0) {
+            newsCache.addAll(newsFinder.queryNewsForBusiness(businessName));
+        }
+        return newsCache;
+    }
 
     public void transferFunds(String from, String to, double amount) throws InsufficientFundsException,
             NullPointerException  {

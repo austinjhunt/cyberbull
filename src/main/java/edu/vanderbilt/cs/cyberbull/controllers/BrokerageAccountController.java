@@ -1,8 +1,6 @@
 package edu.vanderbilt.cs.cyberbull.controllers;
 
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
-import edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccount;
-import edu.vanderbilt.cs.cyberbull.core.watchlist.WatchList;
 import edu.vanderbilt.cs.cyberbull.services.DashboardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,8 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Controller
 public class BrokerageAccountController {
@@ -28,8 +24,10 @@ public class BrokerageAccountController {
     public String viewBrokerageAccount(@PathVariable String accountNumber, Model model){
         try{
             Account account = this.dashboardService.getBrokerageAccount(accountNumber);
+            model.addAttribute("portfolio", account.getPortfolio());
             model.addAttribute("watchlists", account.getWatchlists());
             model.addAttribute("account",  account);
+            model.addAttribute("sp500stocks", dashboardService.getSP500());
             return "accounts/brokerage-account";
         } catch (Exception e) {
             model.addAttribute("errorMessage", e.getMessage());

@@ -24,8 +24,11 @@ public class WeeklyHistoryVisitor implements StockHistoryVisitor {
         List<HistoricalQuote> history = new ArrayList<>();
         try {
             yahoofinance.Stock yfinanceStock = YahooFinance.get(stock.getSymbol());
-            history.addAll(yfinanceStock.getHistory(Interval.WEEKLY));
-            System.out.println(history);
+            try{
+                history.addAll(yfinanceStock.getHistory(Interval.WEEKLY));
+            } catch (Exception e){
+                System.out.println("Exception when getting WEEKLY history");
+            }
         } catch (IOException e){
             System.out.println(e.getMessage());
         }
