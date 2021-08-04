@@ -70,4 +70,6 @@ This is pretty typical of web applications where requests get routed from a fron
 The iterator pattern is used to iterate over historical quotes of a stock and build a stringified JSON object. Also, the iterator() method of the CSVReader class within the Stock Database class ([StockDB]((src/main/java/edu/vanderbilt/cs/cyberbull/core/stockdb/StockDB.java)) is used to handle the iterative parsing of a static CSV file of the S&P 500 stocks. This is the class the forms the underlying primary database of stocks for the application. *Note: it currently only includes the S&P 500 Stocks but can be extended.*
 
 ## Now, the Functional Programming...
+This project makes very heavy use of functional programming with streams, filters, tons of lambda expressions, and other items in this category. To provide some key examples: 
+1. When making a trade (i.e. buying or selling a stock), we use functional programming to quickly filter and find out if there is already an existing open position for the stock being bought (or sold): `
 
