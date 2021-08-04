@@ -156,7 +156,20 @@
       <recent name="edu.vanderbilt.cs.watchlist.commander" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'cyberbull.test'">
+  <component name="RunManager" selected="Application.CyberbullApplication">
+    <configuration name="CyberbullApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.vanderbilt.cs.cyberbull.CyberbullApplication" />
+      <module name="cyberbull.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.vanderbilt.cs.cyberbull.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BrokerageAccountTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -184,27 +197,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest.getBalance&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CyberbullApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;edu.vanderbilt.cs.cyberbull.CyberbullApplicationTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -264,11 +256,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CyberbullApplication" />
         <item itemvalue="Gradle.Tests in 'cyberbull.test'" />
         <item itemvalue="Gradle.DashboardTest" />
         <item itemvalue="Gradle.BrokerageAccountTest.getBalance" />
         <item itemvalue="Gradle.BrokerageAccountTest" />
-        <item itemvalue="Gradle.CyberbullApplicationTests" />
       </list>
     </recent_temporary>
   </component>
