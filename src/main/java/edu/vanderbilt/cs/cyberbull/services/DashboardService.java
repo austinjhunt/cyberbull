@@ -5,6 +5,7 @@ import com.opencsv.exceptions.CsvException;
 import edu.vanderbilt.cs.cyberbull.core.Dashboard;
 import edu.vanderbilt.cs.cyberbull.core.Stock;
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
+import edu.vanderbilt.cs.cyberbull.core.account.balancefinder.BalanceFinderContext;
 import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
 import edu.vanderbilt.cs.cyberbull.core.news.NewsFinder;
 import edu.vanderbilt.cs.cyberbull.core.stock_history.DailyHistoryVisitor;
@@ -127,12 +128,9 @@ public class DashboardService {
         } else if (to.contains("brokerage-")){
             toAccount = getBrokerageAccount(to.split("-")[1]);
         }
-        double fromBalance;
-        if (fromAccount.getClass().getSimpleName().equals("BrokerageAccount")){
-            fromBalance = fromAccount.getCorePosition();
-        } else {
-            fromBalance = fromAccount.getBalance();
-        }
+
+        BalanceFinderContext balanceFinderContext = new BalanceFinderContext(fromAccount);
+        double fromBalance = balanceFinderContext.executeStrategy();
         if (toAccount != null && fromAccount != null && amount <= fromBalance){
             this.dashboard.transfer(fromAccount, toAccount, amount);
         } else if (amount > fromBalance) {
