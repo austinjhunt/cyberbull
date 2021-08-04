@@ -60,4 +60,19 @@ public class OrderOperation implements PortfolioOperation {
     public boolean execute() throws InsufficientFundsException {
         return true; // override!
     }
+
+    @Override
+    public double getCurrentSharePrice() {
+        return 0;
+    }
+
+    @Override
+    public double getTransactionTotal() {
+        return 0;
+    }
+
+    @Override
+    public LocalDateTime getDateTime() {
+        return null;
+    }
 }

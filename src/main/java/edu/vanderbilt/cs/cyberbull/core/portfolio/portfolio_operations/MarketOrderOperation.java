@@ -10,6 +10,7 @@ import edu.vanderbilt.cs.cyberbull.core.account.Account;
 import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /*
 A market order executes immediately when submitted (or immediately when the market opens
@@ -22,13 +23,22 @@ public class MarketOrderOperation extends OrderOperation {
     private final Account account;
     private double transactionTotal;
     protected LocalDateTime dateTime;
+    private double currentSharePrice;
     public MarketOrderOperation(String action, Stock stock, double quantity, Account account){
         super(action, stock, quantity);
         this.account = account;
-        this.transactionTotal =  this.stock.getCurrentPrice() * this.quantity;
+        this.currentSharePrice = this.stock.getCurrentPrice();
+        this.transactionTotal =  this.currentSharePrice * this.quantity;
+    }
+    public double getCurrentSharePrice(){
+        return currentSharePrice;
     }
     public double getTransactionTotal(){
         return transactionTotal;
+    }
+    public String getDateTimeFormatted(){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return dateTime.format(formatter);
     }
     public LocalDateTime getDateTime(){
         return dateTime;

@@ -12,6 +12,11 @@ the command invoker (AccountCommandExecutor).
 
 import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
 
+import java.time.LocalDateTime;
+
 public interface PortfolioOperation {
     boolean execute() throws InsufficientFundsException;
+    double getCurrentSharePrice();
+    double getTransactionTotal();
+    LocalDateTime getDateTime();
 }

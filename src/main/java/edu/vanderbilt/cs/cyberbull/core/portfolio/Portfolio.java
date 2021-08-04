@@ -59,6 +59,7 @@ public class Portfolio {
         activity.executeOperation(op, true );
         positionList.remove(position);
         position.updateQuantityByValue(quantity, op);
+        positionList.add(position);
     }
     public void sellSome(Position position, double quantity) throws InsufficientFundsException {
         OrderOperation op = new MarketOrderOperation("sell", position.getStock(), quantity, account);
@@ -68,6 +69,12 @@ public class Portfolio {
         positionList.add(position);
     }
     public List<Position> getPositions(){
+        System.out.println("Position list size: " + positionList.size());
+        System.out.println(positionList);
+        for (Position position : positionList) {
+            System.out.println(position);
+        }
+        positionList.forEach(p->System.out.println(p.getStock().getSymbol()));
         return positionList;
     }
 

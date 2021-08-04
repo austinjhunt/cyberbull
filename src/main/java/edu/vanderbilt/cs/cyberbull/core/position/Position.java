@@ -15,11 +15,15 @@ package edu.vanderbilt.cs.cyberbull.core.position;
 
 import edu.vanderbilt.cs.cyberbull.core.Stock;
 import edu.vanderbilt.cs.cyberbull.core.portfolio.portfolio_operations.OrderOperation;
+
+import javax.persistence.criteria.Order;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 /*
 Class representing a "position" in a portfolio. A position is a single stock
@@ -65,6 +69,11 @@ public class Position {
         this.created = LocalDateTime.now();
         this.updated = LocalDateTime.now();
         this.orderOperationList = new ArrayList<>();
+    }
+
+    public List<OrderOperation> getOrderHistory(){
+        return orderOperationList.stream().sorted(
+                Comparator.comparing(OrderOperation::getDateTime)).collect(Collectors.toList());
     }
 
     public double getCurrentValue(){

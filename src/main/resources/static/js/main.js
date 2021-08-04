@@ -27,6 +27,15 @@ $(document).ready(function(){
     catch(error){
         console.log(error);
     }
+
+    try{
+        // fix portfolio position history layout due to thymeleaf constraints with looping
+        $('tr.position-history').each(function(i,history_row){
+          var symbol = $(history_row).attr('id').split('-')[1];
+          $("tr#position-" + symbol).after(history_row);
+        });
+    } catch(error){
+    console.log(error);}
 });
 
 function prepare_add_stock_to_watchlist_modal(button){

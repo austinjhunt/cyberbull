@@ -9,28 +9,44 @@ import edu.vanderbilt.cs.cyberbull.core.Stock;
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /*
 LimitOrder class represents a limit order (an order to buy or sell at a specific price or better); a buy limit order
 can only execute at the limit price or lower, where a sell limit order can only execute at the limit price or higher.
+Cost basis = transaction total
+cost basis per share = currentSharePrice
+Cost basis = transaction total
+cost basis per share = currentSharePrice
  */
+
+
 
 public class LimitOrderOperation extends OrderOperation {
     private final double limitPrice;
     private final Account account;
     private double transactionTotal;
     protected LocalDateTime dateTime;
+    private double currentSharePrice;
     public LimitOrderOperation(String action, Stock stock, double quantity, double limitPrice, Account account){
         super(action, stock, quantity);
         this.limitPrice = limitPrice;
         this.account = account;
-        this.transactionTotal = this.stock.getCurrentPrice() * this.quantity;
+        this.currentSharePrice = this.stock.getCurrentPrice();
+        this.transactionTotal =  this.currentSharePrice * this.quantity;
+    }
+    public double getCurrentSharePrice(){
+        return currentSharePrice;
     }
     public double getTransactionTotal(){
         return transactionTotal;
     }
     public LocalDateTime getDateTime(){
         return dateTime;
+    }
+    public String getDateTimeFormatted(){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return dateTime.format(formatter);
     }
     public boolean execute(){
         try {
