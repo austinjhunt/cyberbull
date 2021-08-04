@@ -28,6 +28,9 @@ time by buying or selling more of that position's stock, we also store the opera
 an operation list for that position. This means we can view a history of orders at the portfolio level and at the 
 position level (within that portfolio) on an account dashboard.
 
+#### [The Strategy Pattern](https://refactoring.guru/design-patterns/strategy)
+One important thing to note is that while a bank account simply has a balance associated with it, a brokerage account has both a balance and a core position. A core position represents a balance of uninvested cash just sitting in the account waiting to be invested or transferred somewhere. The *balance* is the sum of the investment values in the account's portfolios and the core position. Now, for handling transfers, we are only interested in the transferable balance of an account, which for a brokerage account is just the core position. So, to find transferable balance of an account that could be one of two different types, we can use the strategy pattern. The [BalanceFinderContext](src/main/java/edu/vanderbilt/cs/cyberbull/core/account/balancefinder/BalanceFinderContext.java) class serves as the context which takes in an account and routes the "get the transferable balance" logic to the appropriate strategy (there's a bank account balance finder strategy which just returns the balance if it's a bank account, and a brokerage account strategy which returns the core position if it's a brokerage account). This way, the client doesn't need to know what type an account is, or how to handle that type. 
+
 #### [The Factory Method Pattern](https://refactoring.guru/design-patterns/creational-patterns)
 With the factory method, you provide an interface for creating objects in a superclass, but you use subclasses to 
 change the type of object that gets created. 
