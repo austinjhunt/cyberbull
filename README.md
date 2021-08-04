@@ -75,6 +75,9 @@ interface to create a Position superclass. Below that, there is a ShortPosition 
 representing the different subclasses, or types, of market positions. Running parallel, there is a ShortPositionFactory
 and a LongPositionFactory responsible for creating those respective types of Position objects.
 
+###### Random Attributes
+The factory pattern is also used to generate random phrases (for titles and descriptions) for the different account types. Since this is a simulator, it allows for you to randomly generate new accounts without having to manually enter account numbers, routing numbers, titles, and descriptions. Currently, there is a RandomPhraseFactory implemented by RandomBrokerageAccountTitleFactory and RandomBankAccountTitleFactory, which each handle the random generation of phrases appropriate to their respective account types. For example, a brokerage account title may be something like "investments for retirement" but that same random choice would not make sense for a bank account, which may be titled something like "joint savings account" or "credit union".
+
 #### [The Bridge Pattern](https://refactoring.guru/design-patterns/bridge)
 
 The Bridge pattern is used pretty heavily since the obvious goal is to divide the complexity of the underlying code
