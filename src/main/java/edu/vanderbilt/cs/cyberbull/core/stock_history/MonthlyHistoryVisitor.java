@@ -24,7 +24,11 @@ public class MonthlyHistoryVisitor implements StockHistoryVisitor {
         List<HistoricalQuote> history = new ArrayList<>();
         try {
             yahoofinance.Stock yfinanceStock = YahooFinance.get(stock.getSymbol());
-            history.addAll(yfinanceStock.getHistory(Interval.MONTHLY));
+            try{
+                history.addAll(yfinanceStock.getHistory(Interval.MONTHLY));
+            } catch (Exception e){
+                System.out.println("Exception when getting MONTHLY history");
+            }
         } catch (IOException e){
             System.out.println(e.getMessage());
         }

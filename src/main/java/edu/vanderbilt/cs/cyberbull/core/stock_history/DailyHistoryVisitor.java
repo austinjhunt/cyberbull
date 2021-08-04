@@ -24,11 +24,11 @@ public class DailyHistoryVisitor implements StockHistoryVisitor {
         List<HistoricalQuote> history = new ArrayList<>();
         try {
              yahoofinance.Stock yfinanceStock = YahooFinance.get(stock.getSymbol());
-             history.addAll(yfinanceStock.getHistory(Interval.DAILY));
-//            for (HistoricalQuote historicalQuote : history) {
-//                historicalQuote.
-//            }
-             System.out.println(history);
+             try{
+                 history.addAll(yfinanceStock.getHistory(Interval.DAILY));
+             } catch (Exception e){
+                 System.out.println("Exception when getting DAILY history");
+             }
         } catch (IOException e){
             System.out.println(e.getMessage());
         }

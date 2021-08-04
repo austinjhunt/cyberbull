@@ -1,14 +1,10 @@
 package edu.vanderbilt.cs.cyberbull.core.account;
 
-import edu.vanderbilt.cs.cyberbull.core.Portfolio;
+import edu.vanderbilt.cs.cyberbull.core.portfolio.Portfolio;
 import edu.vanderbilt.cs.cyberbull.core.Stock;
-import edu.vanderbilt.cs.cyberbull.core.account.commander.ActivityCommander;
 import edu.vanderbilt.cs.cyberbull.core.watchlist.WatchList;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import javax.sound.sampled.Port;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -99,20 +95,8 @@ class BrokerageAccountTest {
     }
 
     @Test
-    void getActivity() {
-        assertEquals(ActivityCommander.class, account.getActivity().getClass());
-    }
-
-    @Test
     void getPortfolio() {
         assertEquals(Portfolio.class, account.getPortfolio().getClass());
-    }
-
-    @Test
-    void setActivity() {
-        ActivityCommander activityCommander = new ActivityCommander();
-        account.setActivity(activityCommander);
-        assertEquals(activityCommander, account.getActivity());
     }
 
     @Test
@@ -156,7 +140,7 @@ class BrokerageAccountTest {
 
     @Test
     void setPortfolio() {
-        Portfolio portfolio = new Portfolio();
+        Portfolio portfolio = new Portfolio(account);
         account.setPortfolio(portfolio);
         assertEquals(portfolio, account.getPortfolio());
     }

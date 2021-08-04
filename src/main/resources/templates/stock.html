@@ -6,67 +6,120 @@
 <div th:replace="fragments/modals"></div>
 
 <main>
-    <div class="container">
+    <input type="hidden" class="d-none" id="stock-symbol" th:value="${stock.getSymbol()}"></input>
+    <div class="container-fluid">
         <h1 class="text-end my-3">
             <i class="fa fa-search"></i> Explore.</h1>
         <hr/>
         <div th:if="${stock ne null}" class="row">
             <div class="col-sm-12 col-md-4">
-                <div class="card my-3">
+                <div class="card my-3 text-light bg-dark">
                     <div class="card-header">
-                        <h4 th:text="${stock.getSymbol()} + ' - ' + ${stock.getBusinessName()}"></h4>
+                        <h2 th:text="${stock.getSymbol()} + ' - ' + ${stock.getBusinessName()}"></h2>
                     </div>
                     <div class="card-body">
                         <h5>Quote</h5>
                         <hr/>
                         <p class="card-text" th:text="'Share Price: $' + ${stock.getQuote().getPrice()}"></p>
-                        <p class="card-text" th:text="'Ask: $' + ${stock.getQuote().getAsk()}"></p>
-                        <p class="card-text" th:text="'Bid: $' + ${stock.getQuote().getBid()}"></p>
+                        <p class="card-text" th:text="'Avg Volume: $' + ${stock.getQuote().getAvgVolume()}"></p>
+                        <p class="card-text" th:text="'Previous Close: $' + ${stock.getQuote().getPreviousClose()}"></p>
                         <p class="card-text" th:text="'Day High: $' + ${stock.getQuote().getDayHigh()}"></p>
                         <p class="card-text" th:text="'Day Low: $' + ${stock.getQuote().getDayLow()}"></p>
                     </div>
                 </div>
+                <hr/>
+
+                <div class="container">
+                    <h2 class="my-3" th:text="'News about ' + ${stock.getBusinessName()}"></h2>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6" th:each="article: ${news}">
+                            <div class="card">
+                                <img class="card-img-top" th:src="${article.getUrlToImage()}"></img>
+                                <div class="card-body">
+                                    <h5 class="card-title" th:text="${article.getTitle()}"></h5>
+                                    <p class="card-text" th:text="${article.getDescription()}"></p>
+                                    <div th:text="${article.getAuthor()} + ' - ' + ${article.getPublishedAt()}"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-8">
-                <div class="card my-3">
-                    <div class="card-header">
-                        <h4>Daily History</h4>
+            <div class="col-sm-12 col-md-8 col-md-8">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="card my-3">
+                            <div class="card-header">
+                                <h4>Daily Price History</h4>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <canvas id="dailyStockHistoryChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-3">
+                            <div class="card-header">
+                                <h4>Weekly Price History</h4>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <canvas id="weeklyStockHistoryChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-3">
+                            <div class="card-header">
+                                <h4>Monthly Price History</h4>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <canvas id="monthlyStockHistoryChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <div>
-                            <canvas id="dailyStockHistoryChart"></canvas>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="card my-3">
+                            <div class="card-header">
+                                <h4>Daily Volume History</h4>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <canvas id="dailyStockVolumeHistoryChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-3">
+                            <div class="card-header">
+                                <h4>Weekly Volume History</h4>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <canvas id="weeklyStockVolumeHistoryChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-3">
+                            <div class="card-header">
+                                <h4>Monthly Volume History</h4>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <canvas id="monthlyStockVolumeHistoryChart"></canvas>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card my-3">
-                    <div class="card-header">
-                        <h4>Weekly History</h4>
-                    </div>
-                    <div class="card-body">
-                        <div>
-                            <canvas id="weeklyStockHistoryChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="card my-3">
-                    <div class="card-header">
-                        <h4>Monthly History</h4>
-                    </div>
-                    <div class="card-body">
-                        <div>
-                            <canvas id="monthlyStockHistoryChart"></canvas>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
 
 </main>
 <div th:replace="fragments/scripts"></div>
-<script>
-        display_history_charts();
-</script>
 <div th:replace="fragments/footer"></div>
 </body>
 </html>

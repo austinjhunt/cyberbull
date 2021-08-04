@@ -14,8 +14,11 @@ after your position is open to update your position.
 package edu.vanderbilt.cs.cyberbull.core.position;
 
 import edu.vanderbilt.cs.cyberbull.core.Stock;
-
+import edu.vanderbilt.cs.cyberbull.core.portfolio.portfolio_operations.OrderOperation;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /*
@@ -36,6 +39,22 @@ public class Position {
     public double currentValue;
     private final LocalDateTime created;
     private LocalDateTime updated;
+    private List<OrderOperation> orderOperationList;
+
+    public Position(Stock stock, double quantity, OrderOperation orderOperation){
+        // A position should be created by an order operation, which inserts itself into the creation
+        // so the position has a record of what order operation created it :)
+        this.stock = stock;
+        this.quantity = quantity;
+        this.netToday = 0;
+        this.netTotal = 0;
+        this.currentValue = 0;
+        this.created = LocalDateTime.now();
+        this.updated = LocalDateTime.now();
+        this.orderOperationList = new ArrayList<>();
+        this.orderOperationList.add(orderOperation);
+    }
+
 
     public Position(Stock stock, double quantity){
         this.stock = stock;
@@ -45,11 +64,9 @@ public class Position {
         this.currentValue = 0;
         this.created = LocalDateTime.now();
         this.updated = LocalDateTime.now();
+        this.orderOperationList = new ArrayList<>();
     }
 
-    public void setCurrentValue(double currentValue) {
-        this.currentValue = currentValue;
-    }
     public double getCurrentValue(){
         return stock.getCurrentPrice() * quantity;
     }
@@ -62,42 +79,29 @@ public class Position {
         return quantity;
     }
 
-    public void setQuantity(double quantity) {
+    public void setQuantity(double quantity, OrderOperation orderOperation) {
         this.quantity = quantity;
         this.updated = LocalDateTime.now();
+        if (orderOperation != null){
+            this.orderOperationList.add(orderOperation);
+        }
     }
 
-    public void updateQuantityByValue(double quantity) {
+    public String getCreatedDateTime(){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return this.created.format(formatter);
+    }
+    public String getLastUpdatedDateTime(){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return this.updated.format(formatter);
+    }
+
+    public void updateQuantityByValue(double quantity, OrderOperation orderOperation) {
         this.quantity += quantity;
         this.updated = LocalDateTime.now();
-    }
-
-    public double getNetToday() {
-        return netToday;
-    }
-
-    public void setNetToday(double netToday) {
-        this.netToday = netToday;
-        this.updated = LocalDateTime.now();
-    }
-
-    public void updateNetTodayByValue(double change){
-        this.netToday += change;
-        this.updated = LocalDateTime.now();
-    }
-
-    public double getNetTotal() {
-        return netTotal;
-    }
-
-    public void setNetTotal(double netTotal) {
-        this.netTotal = netTotal;
-        this.updated = LocalDateTime.now();
-    }
-
-    public void updateNetTotalByValue(double change){
-        this.netTotal += change;
-        this.updated = LocalDateTime.now();
+        if (orderOperation != null){
+            this.orderOperationList.add(orderOperation);
+        }
     }
 
     public LocalDateTime getCreated() {

@@ -11,10 +11,11 @@ implement their own versions of "balances".
 package edu.vanderbilt.cs.cyberbull.core.account;
 
 
-import edu.vanderbilt.cs.cyberbull.core.account.commander.ActivityCommander;
+import edu.vanderbilt.cs.cyberbull.core.portfolio.Portfolio;
 import edu.vanderbilt.cs.cyberbull.core.watchlist.WatchList;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface Account {
     double getBalance();
@@ -25,7 +26,7 @@ public interface Account {
     public String getTitle();
     public void setBalance(double balance);
     public List<WatchList> getWatchlists();
+    public Optional<WatchList> getWatchListById(String watchListId);
     public void addWatchlist(String watchListName);
-    ActivityCommander getActivity();
-    void setActivity(ActivityCommander activity);
+    public Portfolio getPortfolio();
 }

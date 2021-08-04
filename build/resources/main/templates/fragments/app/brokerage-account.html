@@ -1,13 +1,69 @@
-<h1 class="text-end my-3">Manage your Cyberbull simulated brokerage account.</h1>
+<div class="modal" id="add-stock-to-watchlist-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="alert alert-info" role="alert">
+                    Choose a stock to add to your watchlist
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="modal-watchlist-title"></p>
+                <form id="add-stock-to-watchlist-form" method="post">
+                    <select class="form-select" name="symbol" aria-label="Default select example">
+                        <option th:each="stock: ${sp500stocks}" th:value="${stock.getSymbol()}"
+                                th:text="${stock.getSymbol()}"></option>
+                    </select>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" form="add-stock-to-watchlist-form">Apply</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 class="text-end my-3"><i class="fa fa-file-invoice-dollar"></i> Manage your Cyberbull simulated brokerage account
+    .</h1>
 <hr/>
 <div class="my-3 row">
     <div class="col-sm-12 col-md-8">
         <div class="my-2 row">
             <div class="col-sm-6 col-md-6 text-start">
-                <h2 class="text-left my-2">Portfolio</h2>
+                <h2 class="text-left my-2">Your Portfolio</h2>
             </div>
             <div class="col-sm-6 col-md-6 text-end">
-
+                <a th:href="'/trade/' + ${account.getAccountNumber()}" class="btn btn-dark text-light"
+                   title="create watch list">Trade</a>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div th:if="${not #lists.isEmpty(portfolio.getPositions())}">
+                    <table class="table  table-striped datatable">
+                        <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Quantity</th>
+                            <th>Current Value</th>
+                            <th>Opened</th>
+                            <th>Last Update</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="position: ${portfolio.getPositions()}">
+                            <td th:text="${position.getStock().getSymbol()}"></td>
+                            <td th:text="${position.getQuantity()}"></td>
+                            <td th:text="${position.getCurrentValue()}"></td>
+                            <td th:text="${position.getCreatedDateTime()}"></td>
+                            <td th:text="${position.getLastUpdatedDateTime()}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- ELSE -->
+                <div th:unless="${not #lists.isEmpty(portfolio.getPositions())}">
+                    <p class="my-1">You currently hold no positions.</p>
+                </div>
             </div>
         </div>
 
@@ -43,14 +99,18 @@
            class=${indexStat.index == 0 ? 'tab-pane fade show active' : 'tab-pane fade'}"
                 >
                     <div class="py-1 text-end">
-                        <a
-                                th:href="'/watchlists/addStock/' + ${watchlist.getId()} + '/' + ${account.getAccountNumber()}">
+                        <button class="btn btn-info"
+                                th:attr="
+                                data-brokerage-account-number=${account.getAccountNumber()},
+                                data-watchlist-id=${watchlist.getId()},
+                                data-watchlist-title=${watchlist.getTitle()}"
+                                onclick="prepare_add_stock_to_watchlist_modal(this)">
                             <i class="fa fa-plus"></i> Add Stock
-                        </a>
+                        </button>
                     </div>
                     <!-- ELSE -->
                     <div th:if="${not #lists.isEmpty(watchlist.getStocks())}">
-                        <table class="table table-dark table-striped">
+                        <table class="table table-dark table-striped datatable">
                             <thead>
                             <tr>
                                 <th>Symbol</th>

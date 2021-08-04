@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="fragments/head"></div>
+<body>
+<div th:replace="fragments/navigation"></div>
+<div th:replace="fragments/modals"></div>
+
+<main>
+    <div class="container">
+        <h1 class="text-end my-3">
+            <i class="fa fa-exchange-alt"></i> Trade.</h1>
+        <hr/>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 text-start">
+                <h2 class="text-left my-2">Buy or sell S&amp;P 500 stocks below.</h2>
+            </div>
+            <div class="col-sm-6 col-md-6 text-end">
+                 <h3 th:text="'Your account balance: ' + ${account.getBalance()}"></h3>
+            </div>
+        </div>
+        <form th:action="'/trade/' + ${account.getAccountNumber()}" method="post">
+            <label for="stockSelect" class="form-label">Choose a symbol</label>
+            <select class="form-select mb-3" id="stockSelect" name="symbol" aria-label="select a stock">
+                <option th:each="stock: ${sp500stocks}"
+                        th:value="${stock.getSymbol()}"
+                        th:text="${stock.getSymbol()}"></option>
+            </select>
+            <div class="mb-3">
+                <label for="action" class="form-label">Action</label>
+                <select class="form-select mb-3" name="action" id="action" aria-label="select a stock">
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="shares" class="form-label">How many shares do you want? Fractional shares are
+                    allowed.</label>
+                <input type="number" class="form-control" id="shares" name="shares" placeholder="0">
+            </div>
+            <div class="text-center mb-3">
+                <button type="submit" class="btn btn-success">Submit Order</button>
+            </div>
+        </form>
+
+    </div>
+
+</main>
+<div th:replace="fragments/scripts"></div>
+<div th:replace="fragments/footer"></div>
+</body>
+</html>
+

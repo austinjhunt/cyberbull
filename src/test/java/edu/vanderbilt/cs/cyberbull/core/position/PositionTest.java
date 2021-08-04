@@ -29,20 +29,20 @@ class PositionTest {
 
     @Test
     void getQuantity() {
-        position.setQuantity(quantity);
+        position.setQuantity(quantity, null);
         assertEquals(quantity, position.getQuantity());
     }
 
     @Test
     void setQuantity() {
-        position.setQuantity(15);
+        position.setQuantity(15, null);
         assertEquals(15,position.getQuantity());
     }
 
     @Test
     void updateQuantityByValue() {
-        position.setQuantity(10);
-        position.updateQuantityByValue(5);
+        position.setQuantity(10, null);
+        position.updateQuantityByValue(5, null);
         assertEquals(15, position.getQuantity());
     }
 }
