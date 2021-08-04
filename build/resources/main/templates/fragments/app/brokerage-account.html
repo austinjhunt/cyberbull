@@ -183,7 +183,8 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title" th:text="'Account Title: ' + ${account.getTitle()}"></h5>
-                <p class="card-text" th:text="'Core position: ' + ${account.getBalance()}"></p>
+                <p class="card-text" th:text="'Core position: ' + ${account.getCorePosition()}"></p>
+                <p class="card-text" th:text="'Balance: ' + ${account.getBalance()}"></p>
                 <div class="text-end my-2">
                     <a href="/transfer" class="btn btn-success" title="transfer funds">Transfer Funds</a>
                 </div>

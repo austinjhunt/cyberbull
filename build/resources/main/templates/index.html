@@ -10,6 +10,32 @@
         <h1 class="text-end my-3">Welcome to your dashboard.</h1>
         <hr/>
         <div th:replace="fragments/app/accounts"></div>
+        <div th:if="${not #lists.isEmpty(allstocks)}">
+            <h2 class="text-left my-2">Here is what you're currently invested in.</h2>
+            <table class="table table-hover datatable">
+                <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Business Name</th>
+                    <th>Industry</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="stock: ${allstocks}" th:attr="data-stock-symbol='${stock.getSymbol()}'">
+                    <td th:text="${stock.getSymbol()}"></td>
+                    <td th:text="${stock.getBusinessName()}"></td>
+                    <td th:text="${stock.getIndustry()}"></td>
+                    <td>
+                        <a class="btn btn-info" th:href="'/stock/' + ${stock.getSymbol()}" th:title="'view stock ' + ${stock.getSymbol()}">View</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div th:unless="${not #lists.isEmpty(allStocks)}">
+            <div class="m-2 text-start"><h2>You're not currently invested in anything.</h2></div>
+        </div>
     </div>
 
 </main>

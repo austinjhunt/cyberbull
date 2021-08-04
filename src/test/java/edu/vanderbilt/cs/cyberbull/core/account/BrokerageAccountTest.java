@@ -46,23 +46,16 @@ class BrokerageAccountTest {
     @Test
     void getBalance() {
         assertEquals(0, account.getBalance());
-        account.setBalance(500);
-        assertEquals(500, account.getBalance());
-    }
-
-    @Test
-    void setBalance() {
-        assertEquals(0, account.getBalance());
-        account.setBalance(500);
+        account.setCorePosition(500);
         assertEquals(500, account.getBalance());
     }
 
     @Test
     void updateBalance() {
         assertEquals(0, account.getBalance());
-        account.setBalance(500);
+        account.setCorePosition(500);
         assertEquals(500, account.getBalance());
-        account.updateBalance(50);
+        account.updateCorePosition(50);
         assertEquals(550, account.getBalance());
     }
 

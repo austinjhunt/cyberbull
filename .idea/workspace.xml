@@ -10,27 +10,47 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/Portfolio.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/Portfolio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/controllers/DashboardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BankAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/TransferOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/TransferOperation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/LimitOrderOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/LimitOrderOperation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/MarketOrderOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/MarketOrderOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/OrderOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/OrderOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/PortfolioOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/PortfolioOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/position/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/services/DashboardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/services/DashboardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/edu/vanderbilt/cs/cyberbull/core/DashboardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/edu/vanderbilt/cs/cyberbull/core/DashboardTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.CyberbullApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.CyberbullApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/fragments/app/brokerage-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/fragments/app/brokerage-account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.CyberbullApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.CyberbullApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/Portfolio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/controllers/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/TransferOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/account/commander/account_operations/TransferOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/LimitOrderOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/LimitOrderOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/MarketOrderOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/MarketOrderOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/OrderOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/OrderOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/PortfolioOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/portfolio_operations/PortfolioOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/position/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/position/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/DashboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/services/DashboardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/app/accounts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/app/accounts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/app/brokerage-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/app/brokerage-account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/app/forms/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/app/forms/transfer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/DashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/DashboardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/PortfolioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/PortfolioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/vanderbilt/cs/cyberbull/core/account/BrokerageAccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +89,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -90,6 +111,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -134,45 +156,48 @@
       <recent name="edu.vanderbilt.cs.watchlist.commander" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CyberbullApplication">
-    <configuration name="CyberbullApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.vanderbilt.cs.cyberbull.CyberbullApplication" />
-      <module name="cyberbull.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.vanderbilt.cs.cyberbull.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.Tests in 'cyberbull.test'">
+    <configuration name="BrokerageAccountTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="NewsFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.vanderbilt.cs.cyberbull.core.news.NewsFinder" />
-      <module name="cyberbull.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.vanderbilt.cs.cyberbull.core.news.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Stock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.vanderbilt.cs.cyberbull.core.Stock" />
-      <module name="cyberbull.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.vanderbilt.cs.cyberbull.core.portfolio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="BrokerageAccountTest.getBalance" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountTest.getBalance&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="CyberbullApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -180,6 +205,27 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;edu.vanderbilt.cs.cyberbull.CyberbullApplicationTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="DashboardTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;edu.vanderbilt.cs.cyberbull.core.DashboardTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -218,11 +264,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CyberbullApplicationTests" />
         <item itemvalue="Gradle.Tests in 'cyberbull.test'" />
-        <item itemvalue="Application.NewsFinder" />
-        <item itemvalue="Application.Stock" />
-        <item itemvalue="Application.CyberbullApplication" />
+        <item itemvalue="Gradle.DashboardTest" />
+        <item itemvalue="Gradle.BrokerageAccountTest.getBalance" />
+        <item itemvalue="Gradle.BrokerageAccountTest" />
+        <item itemvalue="Gradle.CyberbullApplicationTests" />
       </list>
     </recent_temporary>
   </component>

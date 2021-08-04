@@ -7,13 +7,13 @@
 BrokerageAccount class represents a Brokerage Account, which can have a
 portfolio of positions, a set of watch lists, a historical record of activity (buys, sells, updates, deletes, etc.),
 and a core position, which is some amount of money that has been transferred into it that has not yet been invested.
-We alias "corePosition" as "balance" for Account interface consistency.
  */
 
 package edu.vanderbilt.cs.cyberbull.core.account;
 
 import edu.vanderbilt.cs.cyberbull.core.portfolio.Portfolio;
 import edu.vanderbilt.cs.cyberbull.core.Stock;
+import edu.vanderbilt.cs.cyberbull.core.position.Position;
 import edu.vanderbilt.cs.cyberbull.core.watchlist.WatchList;
 import edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListFactory;
 import edu.vanderbilt.cs.cyberbull.core.watchlist.commander.WatchListAddOperation;
@@ -25,7 +25,8 @@ import java.util.List;
 import java.util.Optional;
 
 public class BrokerageAccount implements Account{
-    private double corePosition;
+    private double corePosition; // non invested cash in account
+    private double balance; // sum of core position and investments
     private Portfolio portfolio;
     private WatchListCommander watchListCommander;
     private WatchListFactory watchListFactory;
@@ -44,6 +45,8 @@ public class BrokerageAccount implements Account{
         this.watchLists = new ArrayList<>();
         this.watchListFactory = new WatchListFactory();
         this.portfolio = new Portfolio(this);
+        this.corePosition = 0;
+        this.balance = 0;
     }
     public BrokerageAccount(String title, String description, String routingNumber, String accountNumber){
         this.title = title;
@@ -54,6 +57,8 @@ public class BrokerageAccount implements Account{
         this.watchLists = new ArrayList<>();
         this.watchListFactory = new WatchListFactory();
         this.portfolio = new Portfolio(this);
+        this.corePosition = 0;
+        this.balance = 0;
     }
     public void setTitle(String title) {
         this.title = title;
@@ -69,16 +74,34 @@ public class BrokerageAccount implements Account{
     }
     @Override
     public double getBalance() {
-        return this.corePosition;
+        return this.corePosition + getPortfolio().getPositions().stream().map(Position::getCurrentValue).reduce(
+                0.0, Double::sum
+        ); // uninvested + invested
     }
     @Override
     public void setBalance(double balance){
-        this.corePosition = balance;
+        this.balance = balance;
     }
     @Override
     public void updateBalance(double delta){
-        this.corePosition += delta;
+        this.balance += delta;
     }
+
+    @Override
+    public void setCorePosition(double value) {
+        corePosition = value;
+    }
+
+    @Override
+    public void updateCorePosition(double delta) {
+        corePosition += delta;
+    }
+
+    @Override
+    public double getCorePosition() {
+       return corePosition;
+    }
+
     @Override
     public String getRoutingNumber() {
         return this.routingNumber;

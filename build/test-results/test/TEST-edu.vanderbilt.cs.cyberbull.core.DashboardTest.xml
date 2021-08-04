@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.DashboardTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-08-04T17:55:14" hostname="huntaj-imac.localdomain" time="0.029">
+  <properties/>
+  <testcase name="removeBrokerageAccount()" classname="edu.vanderbilt.cs.cyberbull.core.DashboardTest" time="0.004"/>
+  <testcase name="addBrokerageAccount()" classname="edu.vanderbilt.cs.cyberbull.core.DashboardTest" time="0.001"/>
+  <testcase name="addRandomBankAccount()" classname="edu.vanderbilt.cs.cyberbull.core.DashboardTest" time="0.002"/>
+  <testcase name="addBankAccount()" classname="edu.vanderbilt.cs.cyberbull.core.DashboardTest" time="0.002"/>
+  <testcase name="getBrokerageAccountList()" classname="edu.vanderbilt.cs.cyberbull.core.DashboardTest" time="0.001"/>
+  <testcase name="getBankAccountList()" classname="edu.vanderbilt.cs.cyberbull.core.DashboardTest" time="0.001"/>
+  <testcase name="addRandomBrokerageAccount()" classname="edu.vanderbilt.cs.cyberbull.core.DashboardTest" time="0.001"/>
+  <testcase name="removeBankAccount()" classname="edu.vanderbilt.cs.cyberbull.core.DashboardTest" time="0.001"/>
+  <testcase name="transfer()" classname="edu.vanderbilt.cs.cyberbull.core.DashboardTest" time="0.006"/>
+  <system-out><![CDATA[Position list size: 0
+[]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

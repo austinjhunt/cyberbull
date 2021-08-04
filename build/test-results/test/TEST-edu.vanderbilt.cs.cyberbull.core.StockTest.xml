@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.StockTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-08-04T17:55:15" hostname="huntaj-imac.localdomain" time="0.156">
+  <properties/>
+  <testcase name="getIndustry()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.001"/>
+  <testcase name="getCurrentPrice()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.021"/>
+  <testcase name="compareCurrentPrice()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.13"/>
+  <testcase name="getSymbol()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.001"/>
+  <testcase name="getBusinessName()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.001"/>
+  <testcase name="setBusinessName()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.001"/>
+  <testcase name="setIndustry()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.001"/>
+  <system-out><![CDATA[13:55:15.955 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+13:55:15.974 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628099707
+13:55:15.974 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+13:55:15.976 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+13:55:16.039 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628099714
+13:55:16.039 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
+13:55:16.039 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
+13:55:16.040 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+13:55:16.104 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628099707
+13:55:16.104 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

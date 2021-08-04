@@ -57,15 +57,16 @@ public class MarketOrderOperation extends OrderOperation {
         }
     }
     public void executeBuy() throws InsufficientFundsException {
-        if (this.account.getBalance() >= this.transactionTotal) {
-            this.account.updateBalance(this.transactionTotal * -1);
+        if (this.account.getCorePosition() >= this.transactionTotal) {
+            this.account.updateCorePosition(this.transactionTotal * -1);
         } else {
-            throw new InsufficientFundsException("You do not have sufficient funds for this order");
+            throw new InsufficientFundsException("You do not have sufficient funds in your core position for this " +
+                    "order");
         }
     }
     public void executeSell(){
         // sell - add total value of sell order to the account's corePosition
-        this.account.updateBalance(this.transactionTotal);
+        this.account.updateCorePosition(this.transactionTotal);
     }
 
 }

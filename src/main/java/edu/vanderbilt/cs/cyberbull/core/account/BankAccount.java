@@ -36,6 +36,18 @@ public class BankAccount implements Account {
         this.routingNumber = routingNumber;
         this.accountNumber = accountNumber;
     }
+    @Override
+    public void setCorePosition(double delta){
+        //no-op
+    }
+    @Override
+    public void updateCorePosition(double delta){
+        // no op
+    }
+    @Override
+    public double getCorePosition(){
+        return 0; // no op
+    }
 
     @Override
     public void setBalance(double balance) {

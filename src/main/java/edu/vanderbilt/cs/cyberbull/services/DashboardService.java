@@ -117,26 +117,25 @@ public class DashboardService {
             NullPointerException  {
         Account fromAccount = null;
         Account toAccount = null;
-        System.out.println("From account: " + from);
-        System.out.println("To account: " + to);
-        System.out.println("Amount: " + amount);
         if (from.contains("bank-")){
-            System.out.println(from + " contains bank-, getting bankAccount");
             fromAccount = getBankAccount(from.split("-")[1]);
         } else if (from.contains("brokerage-")){
-            System.out.println(from + " contains brokerage-, getting brokerageAccount");
             fromAccount = getBrokerageAccount(from.split("-")[1]);
         }
         if (to.contains("bank-")){
-            System.out.println(to + " contains bank-, getting bankAccount");
             toAccount = getBankAccount(to.split("-")[1]);
         } else if (to.contains("brokerage-")){
-            System.out.println(to + " contains brokerage-, getting brokerageAccount");
             toAccount = getBrokerageAccount(to.split("-")[1]);
         }
-        if (toAccount != null && fromAccount != null && amount <= fromAccount.getBalance()){
+        double fromBalance;
+        if (fromAccount.getClass().getSimpleName().equals("BrokerageAccount")){
+            fromBalance = fromAccount.getCorePosition();
+        } else {
+            fromBalance = fromAccount.getBalance();
+        }
+        if (toAccount != null && fromAccount != null && amount <= fromBalance){
             this.dashboard.transfer(fromAccount, toAccount, amount);
-        } else if (amount > fromAccount.getBalance()) {
+        } else if (amount > fromBalance) {
             throw new InsufficientFundsException("Transfer amount " + amount + " exceeds the FROM account balance");
         } else if (toAccount == null || fromAccount == null) {
             throw new NullPointerException("Neither the toAccount " + to + " nor" +

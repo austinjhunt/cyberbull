@@ -58,7 +58,8 @@
         <th scope="col">Description</th>
         <th scope="col">Routing #</th>
         <th scope="col">Account #</th>
-        <th scope="col">Core Position</th>
+        <th scope="col" title="uninvested cash">Core Position</th>
+        <th scope="col" title="invested plus unvested">Balance</th>
         <th></th>
       </tr>
       </thead>
@@ -68,6 +69,7 @@
         <td th:text="${account.getDescription()}"></td>
         <td th:text="${account.getRoutingNumber()}"></td>
         <td th:text="${account.getAccountNumber()}"></td>
+        <td th:text="${account.getCorePosition()}"></td>
         <td th:text="${account.getBalance()}"></td>
         <td>
           <a class="btn btn-info"

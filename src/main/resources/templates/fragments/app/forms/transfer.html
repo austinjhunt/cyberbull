@@ -8,7 +8,7 @@
               th:text="'Bank: ' + ${account.getTitle()} + ' - $' + ${account.getBalance()}"></option>
       <option th:each="account: ${brokerageAccounts}"
               th:value="'brokerage-' + ${account.getAccountNumber()}"
-              th:text="'Brokerage:' + ${account.getTitle()} + ' - $' + ${account.getBalance()}"></option>
+              th:text="'Brokerage: ' + ${account.getTitle()} + ' - $' + ${account.getCorePosition()}"></option>
     </select>
   </div>
   <div class="p-2 my-2">
@@ -20,12 +20,12 @@
               th:text="'Bank: ' + ${account.getTitle()} + ' - $' + ${account.getBalance()}"></option>
       <option th:each="account: ${brokerageAccounts}"
               th:value="'brokerage-' + ${account.getAccountNumber()}"
-              th:text="'Brokerage:' + ${account.getTitle()} + ' - $' + ${account.getBalance()}"></option>
+              th:text="'Brokerage: ' + ${account.getTitle()} + ' - $' + ${account.getCorePosition()}"></option>
     </select>
   </div>
   <div class="p-2 my-2">
-    <label for="balance" class="form-label">Transfer Amount</label>
-    <input type="number" name="transferAmount" class="form-control" id="balance">
+    <label for="amount" class="form-label">Transfer Amount</label>
+    <input type="number" name="transferAmount" class="form-control" id="amount">
   </div>
   <div class="text-center p-2 my-2">
     <button type="submit" class="btn btn-primary">Transfer $$</button>

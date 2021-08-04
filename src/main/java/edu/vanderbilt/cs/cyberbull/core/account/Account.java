@@ -18,13 +18,16 @@ import java.util.List;
 import java.util.Optional;
 
 public interface Account {
-    double getBalance();
-    void updateBalance(double delta);
+    public void setBalance(double balance);
+    public double getBalance();
+    public void updateBalance(double delta);
+    public void setCorePosition(double delta);
+    public void updateCorePosition(double delta);
+    public double getCorePosition();
     public String getRoutingNumber();
     public String getAccountNumber();
     public String getDescription();
     public String getTitle();
-    public void setBalance(double balance);
     public List<WatchList> getWatchlists();
     public Optional<WatchList> getWatchListById(String watchListId);
     public void addWatchlist(String watchListName);

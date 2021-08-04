@@ -30,8 +30,17 @@ public class TransferOperation implements  AccountOperation {
     public void execute(){
         try{
             // this will only be reached if the source balance >= transfer amount. no need to check.
-            this.fromAccount.updateBalance(amount * -1);
-            this.toAccount.updateBalance(amount);
+            // for brokerage account, transfer uses core position!
+            if (fromAccount.getClass().getSimpleName().equals("BrokerageAccount")){
+                fromAccount.updateCorePosition(amount * -1);
+            } else if (fromAccount.getClass().getSimpleName().equals("BankAccount")){
+                fromAccount.updateBalance(amount * -1);
+            }
+            if (toAccount.getClass().getSimpleName().equals("BrokerageAccount")){
+                toAccount.updateCorePosition(amount);
+            } else if (toAccount.getClass().getSimpleName().equals("BankAccount")){
+               toAccount.updateBalance(amount);
+            }
             this.successful = true;
             // fixme: add transfer activity to both accounts
         }

@@ -95,14 +95,9 @@ class DashboardTest {
         // make sure you insufficient funds exception works
         Account bank = dashboard.getBankAccountList().get(0);
         Account brokerage = dashboard.getBrokerageAccountList().get(0);
-//        assertThrows(
-//                InsufficientFundsException.class, () -> {
-//                    dashboard.transfer(bank, brokerage, 1500);
-//                }
-//        );
         bank.setBalance(1500);
         dashboard.transfer(bank, brokerage, 500);
-        assertEquals(bank.getBalance(), 1000);
-        assertEquals(brokerage.getBalance(), 500);
+        assertEquals(1000,bank.getBalance());
+        assertEquals(500, brokerage.getBalance());
     }
 }

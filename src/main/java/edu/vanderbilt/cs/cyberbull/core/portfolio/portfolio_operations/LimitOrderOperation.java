@@ -63,16 +63,17 @@ public class LimitOrderOperation extends OrderOperation {
         }
     }
     public void executeBuy(){
+        // a buy depends on your core position! core position must have enough to buy.
         if (this.stock.getCurrentPrice() < this.limitPrice){
-            if (this.account.getBalance() >= this.transactionTotal) {
-                this.account.updateBalance(this.transactionTotal * -1);
+            if (this.account.getCorePosition() >= this.transactionTotal) {
+                this.account.updateCorePosition(this.transactionTotal * -1);
             }
         }
     }
     public void executeSell(){
         if (this.stock.getCurrentPrice() > this.limitPrice){
             // sell - add total value of sell order to the account's corePosition
-            this.account.updateBalance(this.transactionTotal);
+            this.account.updateCorePosition(this.transactionTotal);
         }
     }
 }

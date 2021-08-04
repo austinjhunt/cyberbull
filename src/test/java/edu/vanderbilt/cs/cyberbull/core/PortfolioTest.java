@@ -15,7 +15,7 @@ class PortfolioTest {
     @BeforeAll
     static void setUp(){
         account = new BrokerageAccount("title","description","1234", "5678");
-        account.updateBalance(5000000);
+        account.updateCorePosition(5000000);
         portfolio = new Portfolio(account);
     }
 
