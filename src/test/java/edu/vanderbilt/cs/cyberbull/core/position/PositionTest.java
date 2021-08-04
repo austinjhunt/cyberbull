@@ -21,7 +21,6 @@ class PositionTest {
         double expected = stock.getCurrentPrice() * quantity;
         double lowVal = expected - 10;
         double highVal = expected + 10;
-        assertTrue(false);
         assertTrue(expected > lowVal && expected < highVal);
     }
 
