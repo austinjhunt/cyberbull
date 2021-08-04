@@ -1,4 +1,4 @@
-# Cyberbull - Brokerage Account Management Meets Design Patterns
+# Cyberbull Investment Simulator - Brokerage Account Management Meets Design Patterns
 
 ![cyberbull](cyberbull.png)
 This is a Spring web application called Cyberbull Investment Simulator built for a Vanderbilt University CS5278
