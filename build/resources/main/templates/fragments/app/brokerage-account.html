@@ -76,17 +76,19 @@
                                     <thead>
                                         <tr>
                                             <th>Date/Time</th>
+                                            <th>Action</th>
                                             <th>Quantity</th>
                                             <th title="price per share at time of order">Cost Basis Per Share</th>
                                             <th title="total transaction value">Cost Basis</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr th:each="position: ${position.getOrderHistory()}">
-                                            <td th:text="${position.getDateTimeFormatted()}"></td>
-                                            <td th:text="${position.getQuantity()}"></td>
-                                            <td th:text="${position.getCurrentSharePrice()}"></td>
-                                            <td th:text="${position.getTransactionTotal()}"></td>
+                                        <tr th:each="order: ${position.getOrderHistory()}">
+                                            <td th:text="${order.getDateTimeFormatted()}"></td>
+                                            <td th:text="${order.getAction()}"></td>
+                                            <td th:text="${order.getQuantity()}"></td>
+                                            <td th:text="${order.getCurrentSharePrice()}"></td>
+                                            <td th:text="${order.getTransactionTotal()}"></td>
                                         </tr>
                                     </tbody>
                                 </table>

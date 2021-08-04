@@ -14,7 +14,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/Portfolio.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/edu/vanderbilt/cs/cyberbull/core/portfolio/Portfolio.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.CyberbullApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.CyberbullApplicationTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.DashboardTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.DashboardTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.PortfolioTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.vanderbilt.cs.cyberbull.core.PortfolioTest.html" afterDir="false" />
@@ -50,6 +50,7 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.watchlist.commander.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.watchlist.commander.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.watchlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.core.watchlist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.vanderbilt.cs.cyberbull.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/fragments/app/brokerage-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/fragments/app/brokerage-account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.CyberbullApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.CyberbullApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.DashboardTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.DashboardTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.PortfolioTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.vanderbilt.cs.cyberbull.core.PortfolioTest.xml" afterDir="false" />
@@ -77,8 +78,10 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/vanderbilt/cs/cyberbull/core/portfolio/Portfolio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/app/brokerage-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/app/brokerage-account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +189,7 @@
       <recent name="edu.vanderbilt.cs.cyberbull.services" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'cyberbull.test'">
+  <component name="RunManager" selected="Application.CyberbullApplication">
     <configuration name="CyberbullApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.vanderbilt.cs.cyberbull.CyberbullApplication" />
       <module name="cyberbull.main" />

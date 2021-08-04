@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.vanderbilt.cs.cyberbull.core.StockTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-08-04T21:04:50" hostname="huntaj-imac.localdomain" time="0.127">
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.StockTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-08-04T21:24:01" hostname="huntaj-imac.localdomain" time="0.107">
   <properties/>
   <testcase name="getIndustry()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.001"/>
-  <testcase name="getCurrentPrice()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.036"/>
-  <testcase name="compareCurrentPrice()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.086"/>
-  <testcase name="getSymbol()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.0"/>
-  <testcase name="getBusinessName()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.001"/>
-  <testcase name="setBusinessName()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.001"/>
+  <testcase name="getCurrentPrice()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.022"/>
+  <testcase name="compareCurrentPrice()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.08"/>
+  <testcase name="getSymbol()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.001"/>
+  <testcase name="getBusinessName()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.0"/>
+  <testcase name="setBusinessName()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.0"/>
   <testcase name="setIndustry()" classname="edu.vanderbilt.cs.cyberbull.core.StockTest" time="0.0"/>
-  <system-out><![CDATA[17:04:50.441 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:04:50.476 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:50.476 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:04:50.478 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
-17:04:50.536 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:50.536 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
-17:04:50.536 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
-17:04:50.536 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:04:50.563 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:50.563 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+  <system-out><![CDATA[17:24:01.359 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+17:24:01.379 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.379 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+17:24:01.381 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+17:24:01.436 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.437 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
+17:24:01.437 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
+17:24:01.437 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+17:24:01.459 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.459 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

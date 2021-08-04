@@ -1,92 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-08-04T21:04:50" hostname="huntaj-imac.localdomain" time="3.583">
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-08-04T21:24:01" hostname="huntaj-imac.localdomain" time="0.686">
   <properties/>
-  <testcase name="getHighestPriceStock()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="1.709"/>
-  <testcase name="getTotalValue()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="1.251"/>
+  <testcase name="getHighestPriceStock()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.289"/>
+  <testcase name="getTotalValue()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.16"/>
   <testcase name="remove()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.0"/>
   <testcase name="contains()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.0"/>
-  <testcase name="getLowestPriceStock()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.618"/>
+  <testcase name="getLowestPriceStock()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.229"/>
   <testcase name="add()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.0"/>
-  <testcase name="getId()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.0"/>
-  <testcase name="setId()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.001"/>
+  <testcase name="getId()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.001"/>
+  <testcase name="setId()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.0"/>
   <testcase name="setStocks()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.0"/>
-  <testcase name="getStocks()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.0"/>
-  <testcase name="setTitle()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.001"/>
+  <testcase name="getStocks()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.001"/>
+  <testcase name="setTitle()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.0"/>
   <testcase name="getTitle()" classname="edu.vanderbilt.cs.cyberbull.core.watchlist.WatchListTest" time="0.0"/>
-  <system-out><![CDATA[17:04:50.579 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:04:50.605 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:50.605 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:04:50.605 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
-17:04:50.728 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:50.729 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
-17:04:50.729 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
-17:04:50.729 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
-17:04:51.177 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:51.178 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
-17:04:51.178 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:04:51.222 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:51.223 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:04:51.224 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
-17:04:51.259 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:51.259 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
-17:04:51.260 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
-17:04:51.260 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:04:51.297 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:51.297 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:04:51.297 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:04:51.605 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:51.606 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:04:51.606 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
-17:04:52.287 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:52.288 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
-17:04:52.289 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
-17:04:52.355 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:52.355 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
-17:04:52.355 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
-17:04:52.356 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:04:52.422 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:52.422 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:04:52.422 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
-17:04:53.294 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:53.294 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
-17:04:53.295 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
-17:04:53.358 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:53.358 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
-17:04:53.358 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
-17:04:53.358 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:04:53.418 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:53.418 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:04:53.418 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
-17:04:53.539 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:53.539 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
-17:04:53.542 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:04:53.896 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:53.896 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:04:53.897 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
-17:04:53.921 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:53.921 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
-17:04:53.921 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
-17:04:53.921 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
-17:04:53.948 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:53.948 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
-17:04:53.949 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
-17:04:53.974 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:53.975 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
-17:04:53.975 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
-17:04:53.976 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
-17:04:54.001 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:54.001 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
-17:04:54.001 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
-17:04:54.001 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:04:54.069 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:54.069 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:04:54.069 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
-17:04:54.132 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:54.132 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
-17:04:54.132 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
-17:04:54.132 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
-17:04:54.158 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:04:54.158 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
+  <system-out><![CDATA[17:24:01.499 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+17:24:01.537 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.537 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+17:24:01.537 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+17:24:01.603 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.603 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
+17:24:01.604 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
+17:24:01.604 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
+17:24:01.672 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.672 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
+17:24:01.673 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+17:24:01.696 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.696 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+17:24:01.697 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+17:24:01.719 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.720 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
+17:24:01.720 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
+17:24:01.720 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+17:24:01.742 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.742 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+17:24:01.742 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+17:24:01.768 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.768 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+17:24:01.768 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
+17:24:01.786 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.786 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
+17:24:01.788 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+17:24:01.812 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.812 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
+17:24:01.812 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
+17:24:01.812 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+17:24:01.837 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.837 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+17:24:01.837 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
+17:24:01.860 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.860 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
+17:24:01.861 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+17:24:01.894 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.895 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
+17:24:01.895 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
+17:24:01.896 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+17:24:01.920 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.921 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+17:24:01.921 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
+17:24:01.944 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.945 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
+17:24:01.951 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+17:24:01.979 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:01.979 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+17:24:01.980 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+17:24:02.003 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:02.003 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
+17:24:02.004 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
+17:24:02.004 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
+17:24:02.028 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:02.028 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
+17:24:02.028 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+17:24:02.051 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:02.051 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
+17:24:02.051 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
+17:24:02.052 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+17:24:02.073 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:02.073 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
+17:24:02.073 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
+17:24:02.073 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+17:24:02.133 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:02.133 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+17:24:02.134 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+17:24:02.156 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:02.156 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627403400
+17:24:02.156 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628726400
+17:24:02.157 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AMZN
+17:24:02.179 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
+17:24:02.179 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627574460
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
