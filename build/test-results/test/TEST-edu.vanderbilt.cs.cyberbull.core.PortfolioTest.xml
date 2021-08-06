@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-04T21:24:01" hostname="huntaj-imac.localdomain" time="0.087">
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-06T02:52:35" hostname="huntaj-imac.localdomain" time="0.17">
   <properties/>
-  <testcase name="removePosition()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.045"/>
-  <testcase name="addPosition()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.021"/>
-  <testcase name="getPositions()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.02"/>
-  <system-out><![CDATA[17:24:01.195 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:24:01.216 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:24:01.217 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:24:01.217 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:24:01.239 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:24:01.239 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:24:01.240 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:24:01.260 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:24:01.260 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-17:24:01.262 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-17:24:01.281 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628107202
-17:24:01.281 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+  <testcase name="removePosition()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.119"/>
+  <testcase name="addPosition()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.024"/>
+  <testcase name="getPositions()" classname="edu.vanderbilt.cs.cyberbull.core.PortfolioTest" time="0.025"/>
+  <system-out><![CDATA[22:52:35.997 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+22:52:36.053 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628193602
+22:52:36.054 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+22:52:36.054 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+22:52:36.114 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628193602
+22:52:36.114 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+22:52:36.116 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+22:52:36.139 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628193602
+22:52:36.139 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+22:52:36.141 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+22:52:36.164 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628193602
+22:52:36.165 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

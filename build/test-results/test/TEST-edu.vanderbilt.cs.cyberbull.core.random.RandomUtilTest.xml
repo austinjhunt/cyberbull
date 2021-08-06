@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.vanderbilt.cs.cyberbull.core.random.RandomUtilTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-04T21:24:01" hostname="huntaj-imac.localdomain" time="0.002">
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.random.RandomUtilTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-06T02:52:36" hostname="huntaj-imac.localdomain" time="0.005">
   <properties/>
-  <testcase name="randomNumberString()" classname="edu.vanderbilt.cs.cyberbull.core.random.RandomUtilTest" time="0.001"/>
-  <testcase name="getRandomNumber()" classname="edu.vanderbilt.cs.cyberbull.core.random.RandomUtilTest" time="0.0"/>
+  <testcase name="randomNumberString()" classname="edu.vanderbilt.cs.cyberbull.core.random.RandomUtilTest" time="0.003"/>
+  <testcase name="getRandomNumber()" classname="edu.vanderbilt.cs.cyberbull.core.random.RandomUtilTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

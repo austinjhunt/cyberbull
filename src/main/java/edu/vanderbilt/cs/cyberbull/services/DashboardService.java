@@ -11,7 +11,7 @@ import edu.vanderbilt.cs.cyberbull.core.news.NewsFinder;
 import edu.vanderbilt.cs.cyberbull.core.stock_history.DailyHistoryVisitor;
 import edu.vanderbilt.cs.cyberbull.core.stock_history.MonthlyHistoryVisitor;
 import edu.vanderbilt.cs.cyberbull.core.stock_history.WeeklyHistoryVisitor;
-import edu.vanderbilt.cs.cyberbull.core.stockdb.StockDB;
+import edu.vanderbilt.cs.cyberbull.core.couchbase.stockdb.StockDB;
 import org.springframework.stereotype.Service;
 import yahoofinance.histquotes.HistoricalQuote;
 

@@ -1,4 +1,4 @@
-package edu.vanderbilt.cs.cyberbull.core.stockdb;
+package edu.vanderbilt.cs.cyberbull.core.couchbase.stockdb;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
