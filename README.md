@@ -194,4 +194,26 @@ dashboardService.getBrokerageAccounts().forEach(
     ba -> ba.getPortfolio().getPositions().forEach(
         p->allStocks.add(p.getStock())));
 ```
+
+### Development Environment 
+If you would like to use or work on this project, here's how you can do it.
+1. Clone the repository
+```
+git clone https://github.com/austinjhunt/cyberbull.git
+```
+2. Open the project in an IDE of your choice. I use [IntelliJ IDEA (CE)](https://www.jetbrains.com/idea/)
+   a. Within IntelliJ, choose File > New > Project from Existing Sources > Choose the cyberbull directory you just 
+   cloned > Choose Gradle
+3. To test it out, you can simply right click the CyberbullApplication.java file and click the "Run 
+   CyberbullApplication.main()" option. Open http://localhost:8080 in a browser. 
+4. To run the test suite, right click on the test/ folder and click "Run tests". At the time of writing, there are 
+   87 total tests.
+5. If you want to use the Docker environment, you can just run 
+``` 
+docker-compose up 
+```
+which runs the containers in the foreground; if you want to run the containers in the background, use 
+``` 
+docker-compose up -d 
+```
    
