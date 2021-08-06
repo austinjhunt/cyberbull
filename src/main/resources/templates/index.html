@@ -9,33 +9,64 @@
     <div class="container">
         <h1 class="text-end my-3">Welcome to your dashboard.</h1>
         <hr/>
-        <div th:replace="fragments/app/accounts"></div>
-        <div th:if="${not #lists.isEmpty(allstocks)}">
-            <h2 class="text-left my-2">Here is what you're currently invested in.</h2>
-            <table class="table table-hover datatable">
-                <thead>
-                <tr>
-                    <th>Symbol</th>
-                    <th>Business Name</th>
-                    <th>Industry</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr th:each="stock: ${allstocks}" th:attr="data-stock-symbol='${stock.getSymbol()}'">
-                    <td th:text="${stock.getSymbol()}"></td>
-                    <td th:text="${stock.getBusinessName()}"></td>
-                    <td th:text="${stock.getIndustry()}"></td>
-                    <td>
-                        <a class="btn btn-info" th:href="'/stock/' + ${stock.getSymbol()}" th:title="'view stock ' + ${stock.getSymbol()}">View</a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <div th:replace="fragments/app/accounts"></div>
+                <div th:if="${not #lists.isEmpty(allstocks)}">
+                    <h2 class="text-left my-2">Here is what you're currently invested in.</h2>
+                    <table class="table table-hover datatable">
+                        <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Business Name</th>
+                            <th>Industry</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="stock: ${allstocks}" th:attr="data-stock-symbol='${stock.getSymbol()}'">
+                            <td th:text="${stock.getSymbol()}"></td>
+                            <td th:text="${stock.getBusinessName()}"></td>
+                            <td th:text="${stock.getIndustry()}"></td>
+                            <td>
+                                <a class="btn btn-info" th:href="'/stock/' + ${stock.getSymbol()}" th:title="'view stock ' + ${stock.getSymbol()}">View</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div th:unless="${not #lists.isEmpty(allstocks)}">
+                    <div class="m-2 text-start"><h2>You're not currently invested in anything.</h2></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        Recent Activity
+                    </div>
+                    <div class="card-body">
+                        <div th:if="${not #lists.isEmpty(activity)}">
+                            <table class="table">
+                                <thead>
+                                <th>Action</th>
+                                <th>Date/Time</th>
+                                </thead>
+                                <tbody>
+                                <tr th:each="operation: ${activity}">
+                                    <td th:text="${operation.getAction()}"></td>
+                                    <td th:text="${operation.getDateTimeFormatted()}"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div th:unless="${not #lists.isEmpty(activity)}">
+                            <h3>No recent activity</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div th:unless="${not #lists.isEmpty(allstocks)}">
-            <div class="m-2 text-start"><h2>You're not currently invested in anything.</h2></div>
-        </div>
+
     </div>
 
 </main>

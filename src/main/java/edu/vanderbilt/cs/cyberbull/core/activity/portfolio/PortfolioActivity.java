@@ -8,10 +8,11 @@ Invoker in Command pattern. Handles the execution and storage of
 account operations; each account has its own commander.
  */
 
-package edu.vanderbilt.cs.cyberbull.core.account.commander;
+package edu.vanderbilt.cs.cyberbull.core.activity.portfolio;
 
 
-import edu.vanderbilt.cs.cyberbull.core.account.commander.account_operations.AccountOperation;
+import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
+import edu.vanderbilt.cs.cyberbull.core.activity.portfolio.operations.PortfolioOperation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,13 +29,12 @@ Can an order be thought of as a factory of positions?... No. It will only ever m
 So, should the position created by an order be an attribute of the order? Or should the order be added
 to an "order list" attribute of the Position
  */
-public class AccountActivity {
-    private final List<AccountOperation> operations = new ArrayList<>();
-    public List<AccountOperation> getOperations(){
+public class PortfolioActivity {
+    private final List<PortfolioOperation> operations = new ArrayList<>();
+    public List<PortfolioOperation> getOperations(){
         return this.operations;
     }
-
-    public void executeOperation(AccountOperation operation, boolean saveOperation){
+    public void executeOperation(PortfolioOperation operation, boolean saveOperation) throws InsufficientFundsException {
         if (saveOperation) {
             operations.add(operation);
         }

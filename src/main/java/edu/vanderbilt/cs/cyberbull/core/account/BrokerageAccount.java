@@ -11,6 +11,7 @@ and a core position, which is some amount of money that has been transferred int
 
 package edu.vanderbilt.cs.cyberbull.core.account;
 
+import edu.vanderbilt.cs.cyberbull.core.activity.account.AccountType;
 import edu.vanderbilt.cs.cyberbull.core.portfolio.Portfolio;
 import edu.vanderbilt.cs.cyberbull.core.Stock;
 import edu.vanderbilt.cs.cyberbull.core.position.Position;
@@ -60,6 +61,7 @@ public class BrokerageAccount implements Account{
         this.corePosition = 0;
         this.balance = 0;
     }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -155,5 +157,8 @@ public class BrokerageAccount implements Account{
     }
     public void addWatchList(WatchList newWatchList){
         this.watchLists.add(newWatchList);
+    }
+    public String toString(){
+        return AccountType.BROKERAGE + " Account #" + getAccountNumber();
     }
 }

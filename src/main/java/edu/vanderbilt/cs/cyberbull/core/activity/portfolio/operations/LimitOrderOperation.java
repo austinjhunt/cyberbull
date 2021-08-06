@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.cyberbull.core.portfolio.portfolio_operations;
+package edu.vanderbilt.cs.cyberbull.core.activity.portfolio.operations;
 
 import edu.vanderbilt.cs.cyberbull.core.Stock;
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
@@ -19,21 +19,14 @@ cost basis per share = currentSharePrice
 Cost basis = transaction total
 cost basis per share = currentSharePrice
  */
-
-
-
 public class LimitOrderOperation extends OrderOperation {
     private final double limitPrice;
-    private final Account account;
-    private double transactionTotal;
-    protected LocalDateTime dateTime;
-    private double currentSharePrice;
     public LimitOrderOperation(String action, Stock stock, double quantity, double limitPrice, Account account){
-        super(action, stock, quantity);
+        super(action, stock, quantity, account);
         this.limitPrice = limitPrice;
-        this.account = account;
-        this.currentSharePrice = this.stock.getCurrentPrice();
-        this.transactionTotal =  this.currentSharePrice * this.quantity;
+        this.setAction(
+                "[LIMIT ORDER w/limit=$" + limitPrice + "]: " + this.action
+        );
     }
     public double getCurrentSharePrice(){
         return currentSharePrice;
@@ -41,14 +34,11 @@ public class LimitOrderOperation extends OrderOperation {
     public double getTransactionTotal(){
         return transactionTotal;
     }
-    public LocalDateTime getDateTime(){
-        return dateTime;
-    }
     public String getDateTimeFormatted(){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         return dateTime.format(formatter);
     }
-    public boolean execute(){
+    public void execute(){
         try {
             if (this.action == "buy") {
                 this.executeBuy();
@@ -56,10 +46,8 @@ public class LimitOrderOperation extends OrderOperation {
                 this.executeSell();
             }
             this.dateTime = LocalDateTime.now();
-            return true;
         } catch (Exception e){
             System.out.println(e.getMessage());
-            return false;
         }
     }
     public void executeBuy(){

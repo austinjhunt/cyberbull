@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CyberbullApplicationTests {
 
 	@Autowired
-	private DashboardController dashboardController;
+	private HomeController homeController;
 	@Autowired
 	private BankAccountController bankAccountController;
 	@Autowired
@@ -27,7 +27,7 @@ class CyberbullApplicationTests {
 
 	@Test
 	void contextLoads() {
-		assertNotEquals(null, dashboardController);
+		assertNotEquals(null, homeController);
 		assertNotEquals(null, bankAccountController);
 		assertNotEquals(null, brokerageAccountController);
 		assertNotEquals(null, errorController);

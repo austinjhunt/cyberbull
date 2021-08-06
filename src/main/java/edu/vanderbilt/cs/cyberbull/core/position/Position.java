@@ -14,9 +14,8 @@ after your position is open to update your position.
 package edu.vanderbilt.cs.cyberbull.core.position;
 
 import edu.vanderbilt.cs.cyberbull.core.Stock;
-import edu.vanderbilt.cs.cyberbull.core.portfolio.portfolio_operations.OrderOperation;
+import edu.vanderbilt.cs.cyberbull.core.activity.portfolio.operations.OrderOperation;
 
-import javax.persistence.criteria.Order;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;

@@ -3,14 +3,17 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.cyberbull.core.portfolio.portfolio_operations;
+package edu.vanderbilt.cs.cyberbull.core.activity.portfolio.operations;
 
 import edu.vanderbilt.cs.cyberbull.core.Stock;
+import edu.vanderbilt.cs.cyberbull.core.account.Account;
 import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
+import org.apache.tomcat.jni.Local;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 import java.util.Calendar;
 import java.util.Date;
@@ -23,14 +26,23 @@ or a limit order; Limit/Market orders represented as subclasses of order.
 public class OrderOperation implements PortfolioOperation {
     protected String action; // buy or sell
     protected Stock stock;
+    protected Account account;
     protected double quantity;
-    public OrderOperation(String action, Stock stock, double quantity){
-        this.action = action;
+    protected LocalDateTime dateTime;
+    protected final double currentSharePrice;
+    protected final double transactionTotal;
+    public OrderOperation(String action, Stock stock, double quantity, Account account){
+        this.action = action + " " + quantity + " shares of " + stock.getSymbol();
         this.stock = stock;
+        this.currentSharePrice = stock.getCurrentPrice();
+        this.transactionTotal = this.currentSharePrice * this.quantity;
         this.quantity = quantity;
     }
     public String getAction(){
         return action;
+    }
+    protected void setAction(String action){
+        this.action = action;
     }
     public Stock getStock(){
         return stock;
@@ -57,22 +69,24 @@ public class OrderOperation implements PortfolioOperation {
         }
     }
     @Override
-    public boolean execute() throws InsufficientFundsException {
-        return true; // override!
+    public void execute() throws InsufficientFundsException {
+        // no op for superclass; override in subclasses; sets datetime to time of execute() call
     }
-
     @Override
     public double getCurrentSharePrice() {
-        return 0;
+        return currentSharePrice;
     }
-
     @Override
     public double getTransactionTotal() {
-        return 0;
+        return transactionTotal;
     }
-
     @Override
-    public LocalDateTime getDateTime() {
-        return null;
+    public LocalDateTime getDateTime(){
+        return dateTime;
+    }
+    @Override
+    public String getDateTimeFormatted() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return dateTime.format(formatter);
     }
 }

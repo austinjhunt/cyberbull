@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.cyberbull.core.portfolio.portfolio_operations;
+package edu.vanderbilt.cs.cyberbull.core.activity.portfolio.operations;
 
 import edu.vanderbilt.cs.cyberbull.core.Stock;
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
@@ -20,30 +20,13 @@ for a 10 shares of a $100 share price, and that share price jumps to 200 before 
 twice what you were aiming for.
  */
 public class MarketOrderOperation extends OrderOperation {
-    private final Account account;
-    private double transactionTotal;
-    protected LocalDateTime dateTime;
-    private double currentSharePrice;
     public MarketOrderOperation(String action, Stock stock, double quantity, Account account){
-        super(action, stock, quantity);
-        this.account = account;
-        this.currentSharePrice = this.stock.getCurrentPrice();
-        this.transactionTotal =  this.currentSharePrice * this.quantity;
+        super(action, stock, quantity, account);
+        this.setAction(
+                "[MARKET ORDER]: " + this.action
+        );
     }
-    public double getCurrentSharePrice(){
-        return currentSharePrice;
-    }
-    public double getTransactionTotal(){
-        return transactionTotal;
-    }
-    public String getDateTimeFormatted(){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        return dateTime.format(formatter);
-    }
-    public LocalDateTime getDateTime(){
-        return dateTime;
-    }
-    public boolean execute() throws InsufficientFundsException {
+    public void execute() throws InsufficientFundsException {
         try {
             if (this.action == "buy") {
                 this.executeBuy();
@@ -51,7 +34,6 @@ public class MarketOrderOperation extends OrderOperation {
                 this.executeSell();
             }
             this.dateTime = LocalDateTime.now();
-            return true;
         } catch (InsufficientFundsException e){
             throw new InsufficientFundsException("You do not have sufficient funds for this order");
         }

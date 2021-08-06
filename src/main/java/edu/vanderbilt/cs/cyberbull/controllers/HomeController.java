@@ -11,21 +11,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class DashboardController {
+public class HomeController {
     private DashboardService dashboardService;
     @Autowired
-    public DashboardController(DashboardService dashboardService){
+    public HomeController(DashboardService dashboardService){
         this.dashboardService = dashboardService;
     }
 
     @RequestMapping({"/",""})
     public String home(Model model){
         try{
-            List<Stock> allStocks = new ArrayList<>();
-            dashboardService.getBrokerageAccounts().forEach(ba -> ba.getPortfolio().getPositions().forEach(p->allStocks.add(p.getStock())));
-            model.addAttribute("allstocks", allStocks);
+            model.addAttribute("allstocks",  dashboardService.getAllStocks());
             model.addAttribute("brokerageAccounts", dashboardService.getBrokerageAccounts());
             model.addAttribute("bankAccounts", dashboardService.getBankAccounts());
+            model.addAttribute("activity", dashboardService.getAllActivity());
             return "index";
         } catch (Exception e) {
             model.addAttribute("errorMessage", e.getMessage());

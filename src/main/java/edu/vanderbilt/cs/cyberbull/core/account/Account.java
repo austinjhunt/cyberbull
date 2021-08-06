@@ -11,6 +11,7 @@ implement their own versions of "balances".
 package edu.vanderbilt.cs.cyberbull.core.account;
 
 
+import edu.vanderbilt.cs.cyberbull.core.activity.account.AccountType;
 import edu.vanderbilt.cs.cyberbull.core.portfolio.Portfolio;
 import edu.vanderbilt.cs.cyberbull.core.watchlist.WatchList;
 
@@ -32,4 +33,5 @@ public interface Account {
     public Optional<WatchList> getWatchListById(String watchListId);
     public void addWatchlist(String watchListName);
     public Portfolio getPortfolio();
+    public String toString();
 }

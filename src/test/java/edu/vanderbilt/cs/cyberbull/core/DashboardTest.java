@@ -1,5 +1,6 @@
 package edu.vanderbilt.cs.cyberbull.core;
 
+import com.opencsv.exceptions.CsvException;
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
 import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
 import org.aspectj.lang.annotation.Before;
@@ -8,12 +9,14 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class DashboardTest {
     protected static Dashboard dashboard;
     @BeforeAll
-    static void setUp(){
+    static void setUp() throws IOException, CsvException {
         dashboard = new Dashboard();
     }
     @AfterEach
@@ -89,7 +92,7 @@ class DashboardTest {
     }
 
     @Test
-    void transfer() {
+    void transfer() throws InsufficientFundsException {
         dashboard.addRandomBankAccount();
         dashboard.addRandomBrokerageAccount();
         // make sure you insufficient funds exception works

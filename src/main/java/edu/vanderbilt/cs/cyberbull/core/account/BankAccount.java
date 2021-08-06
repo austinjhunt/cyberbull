@@ -10,6 +10,7 @@ as a balance at any given time that can be increased or decreased via transfers 
 
 package edu.vanderbilt.cs.cyberbull.core.account;
 
+import edu.vanderbilt.cs.cyberbull.core.activity.account.AccountType;
 import edu.vanderbilt.cs.cyberbull.core.portfolio.Portfolio;
 import edu.vanderbilt.cs.cyberbull.core.watchlist.WatchList;
 
@@ -36,6 +37,7 @@ public class BankAccount implements Account {
         this.routingNumber = routingNumber;
         this.accountNumber = accountNumber;
     }
+
     @Override
     public void setCorePosition(double delta){
         //no-op
@@ -122,4 +124,8 @@ public class BankAccount implements Account {
         return this.balance;
     }
 
+
+    public String toString(){
+        return AccountType.BANK + " Account #" + getAccountNumber();
+    }
    }

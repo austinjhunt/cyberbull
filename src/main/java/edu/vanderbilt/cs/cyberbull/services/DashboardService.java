@@ -5,140 +5,95 @@ import com.opencsv.exceptions.CsvException;
 import edu.vanderbilt.cs.cyberbull.core.Dashboard;
 import edu.vanderbilt.cs.cyberbull.core.Stock;
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
-import edu.vanderbilt.cs.cyberbull.core.account.balancefinder.BalanceFinderContext;
+import edu.vanderbilt.cs.cyberbull.core.activity.Operation;
+import edu.vanderbilt.cs.cyberbull.core.activity.account.operations.AccountOperation;
 import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
-import edu.vanderbilt.cs.cyberbull.core.news.NewsFinder;
-import edu.vanderbilt.cs.cyberbull.core.stock_history.DailyHistoryVisitor;
-import edu.vanderbilt.cs.cyberbull.core.stock_history.MonthlyHistoryVisitor;
-import edu.vanderbilt.cs.cyberbull.core.stock_history.WeeklyHistoryVisitor;
-import edu.vanderbilt.cs.cyberbull.core.couchbase.stockdb.StockDB;
 import org.springframework.stereotype.Service;
 import yahoofinance.histquotes.HistoricalQuote;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class DashboardService {
     private final Dashboard dashboard;
     private String activeError;
-    private NewsFinder newsFinder;
-    private List<Article> newsCache;
-    private StockDB stockdb;
     public String getActiveError(){
-        return this.activeError;
+        return activeError;
     }
-    public void setActiveError(Exception activeError){
+    public void setActiveError(Exception e){
         StringWriter sw = new StringWriter();
         PrintWriter pw = new PrintWriter(sw);
-        activeError.printStackTrace(pw);
-        this.activeError = activeError.getClass().toString() + " ------ " +
-                "Message: \n" + activeError.getMessage() + "-----Stack Trace: " + sw.toString();
+        e.printStackTrace(pw);
+        activeError = e.getClass().toString() + " ------ " +
+                "Message: \n" + e.getMessage() + "-----Stack Trace: " + sw.toString();
     }
     public DashboardService() throws IOException, CsvException {
-        this.dashboard = new Dashboard();
-        this.stockdb = new StockDB();
-        this.newsFinder = new NewsFinder();
-        this.newsCache = new ArrayList<>();
+        dashboard = new Dashboard();
+        activeError = "";
     }
-
     public List<Stock> getSP500(){
-        return this.stockdb.getSP500();
+        return dashboard.getSP500();
     }
     public Optional<Stock> getStock(String symbol){
-        return this.stockdb.getStock(symbol);
+        return dashboard.getStock(symbol);
     }
-
     public List<Account> getBrokerageAccounts(){
-        return this.dashboard.getBrokerageAccountList();
+        return dashboard.getBrokerageAccountList();
     }
     public List<Account> getBankAccounts(){
-        return this.dashboard.getBankAccountList();
+        return dashboard.getBankAccountList();
     }
-
     public Account getBankAccount(String accountNumber){
-        System.out.println("Getting bank account from account number: " + accountNumber);
-        return this.dashboard.getBankAccountList().stream().filter(account->
-                account.getAccountNumber().equals(accountNumber)).collect(Collectors.toList()).get(0);
+        return dashboard.getBankAccount(accountNumber);
     }
     public Account getBrokerageAccount(String accountNumber){
-        System.out.println("Getting brokerage account from account number: " + accountNumber);
-        return this.dashboard.getBrokerageAccountList().stream().filter(account->
-                account.getAccountNumber().equals(accountNumber)).collect(Collectors.toList()).get(0);
+        return dashboard.getBrokerageAccount(accountNumber);
     }
-
-    public boolean addBankAccount(String title, String description, String routingNumber, String accountNumber){
-        return this.dashboard.addBankAccount(title,description,routingNumber,accountNumber);
+    public void addBankAccount(String title, String description, String routingNumber, String accountNumber){
+        dashboard.addBankAccount(title, description, routingNumber, accountNumber);
     }
-    public boolean addRandomBankAccount(){
-        return this.dashboard.addRandomBankAccount();
+    public void addRandomBankAccount(){
+        dashboard.addRandomBankAccount();
     }
-    public boolean addBrokerageAccount(String title, String description){
-        return this.dashboard.addBrokerageAccount(title,description);
+    public void addBrokerageAccount(String title, String description){
+        dashboard.addBrokerageAccount(title, description);
     }
-    public boolean addRandomBrokerageAccount(){
-        return this.dashboard.addRandomBrokerageAccount();
+    public void addRandomBrokerageAccount(){
+        dashboard.addRandomBrokerageAccount();
     }
-
-
-
     public boolean removeBankAccount(String accountNumber){
-        return this.dashboard.removeBankAccount(accountNumber);
+        return dashboard.removeBankAccount(accountNumber);
     }
     public boolean removeBrokerageAccount(String accountNumber){
-        return this.dashboard.removeBrokerageAccount(accountNumber);
+        return dashboard.removeBrokerageAccount(accountNumber);
     }
-
     public List<HistoricalQuote> getDailyStockHistory(Stock stock){
-        DailyHistoryVisitor visitor = new DailyHistoryVisitor();
-        return visitor.visit(stock);
+        return dashboard.getDailyStockHistory(stock);
     }
     public List<HistoricalQuote> getWeeklyStockHistory(Stock stock){
-        WeeklyHistoryVisitor visitor = new WeeklyHistoryVisitor();
-        return visitor.visit(stock);
+        return dashboard.getWeeklyStockHistory(stock);
     }
     public List<HistoricalQuote> getMonthlyStockHistory(Stock stock){
-        MonthlyHistoryVisitor visitor = new MonthlyHistoryVisitor();
-        return visitor.visit(stock);
+        return dashboard.getMonthlyStockHistory(stock);
     }
-
     public List<Article> getBusinessNews(String businessName){
-        if (newsCache.size() == 0) {
-            newsCache.addAll(newsFinder.queryNewsForBusiness(businessName));
-        }
-        return newsCache;
+        return dashboard.getBusinessNews(businessName);
     }
-
-    public void transferFunds(String from, String to, double amount) throws InsufficientFundsException,
+    public void transfer(String from, String to, double amount) throws InsufficientFundsException,
             NullPointerException  {
-        Account fromAccount = null;
-        Account toAccount = null;
-        if (from.contains("bank-")){
-            fromAccount = getBankAccount(from.split("-")[1]);
-        } else if (from.contains("brokerage-")){
-            fromAccount = getBrokerageAccount(from.split("-")[1]);
-        }
-        if (to.contains("bank-")){
-            toAccount = getBankAccount(to.split("-")[1]);
-        } else if (to.contains("brokerage-")){
-            toAccount = getBrokerageAccount(to.split("-")[1]);
-        }
-
-        BalanceFinderContext balanceFinderContext = new BalanceFinderContext(fromAccount);
-        double fromBalance = balanceFinderContext.executeStrategy();
-        if (toAccount != null && fromAccount != null && amount <= fromBalance){
-            this.dashboard.transfer(fromAccount, toAccount, amount);
-        } else if (amount > fromBalance) {
-            throw new InsufficientFundsException("Transfer amount " + amount + " exceeds the FROM account balance");
-        } else if (toAccount == null || fromAccount == null) {
-            throw new NullPointerException("Neither the toAccount " + to + " nor" +
-                    " the from account " + from + " can be null.");
-        }
-
+        dashboard.transfer(from, to, amount);
+    }
+    public List<Stock> getAllStocks(){
+        return dashboard.getAllStocks();
+    }
+    public List<Operation> getAllActivity(){
+        return dashboard.getAllActivity();
+    }
+    public void updateBankAccountBalance(String accountNumber, double newBalance){
+        dashboard.updateBankAccountBalance(accountNumber, newBalance);
     }
 }

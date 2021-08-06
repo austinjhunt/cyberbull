@@ -3,12 +3,12 @@
  * All rights reserved.
  */
 
-package edu.vanderbilt.cs.cyberbull.core.account.commander.account_operations;
+package edu.vanderbilt.cs.cyberbull.core.activity.account.operations;
 
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
-import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /*
 TransferOperation represents a transfer of funds from one account to another. Executed and optionally
@@ -18,14 +18,24 @@ stored by the AccountCommandExecutor in the Command design pattern.
 public class TransferOperation implements  AccountOperation {
     private final Account fromAccount;
     private final Account toAccount;
-    private boolean successful = false;
     private final double amount;
     private LocalDateTime dateTime;
-
+    private final String action;
     public TransferOperation(Account fromAccount, Account toAccount, double amount){
         this.fromAccount = fromAccount;
         this.toAccount = toAccount;
         this.amount = amount;
+        this.action = "Transfer $" + amount + " from " + fromAccount.toString() + " to " + toAccount.toString();
+    }
+    public String getAction(){
+        return action;
+    }
+    public LocalDateTime getDateTime(){
+        return dateTime;
+    }
+    public String getDateTimeFormatted(){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return dateTime.format(formatter);
     }
     public void execute(){
         try{
@@ -41,12 +51,9 @@ public class TransferOperation implements  AccountOperation {
             } else if (toAccount.getClass().getSimpleName().equals("BankAccount")){
                toAccount.updateBalance(amount);
             }
-            this.successful = true;
-            // fixme: add transfer activity to both accounts
         }
         catch (Exception e){
             System.out.println(e.getMessage());
-            this.successful = false;
         }
         this.dateTime = LocalDateTime.now();
     }

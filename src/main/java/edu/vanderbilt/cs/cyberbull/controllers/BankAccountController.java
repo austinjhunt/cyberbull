@@ -67,8 +67,7 @@ public class BankAccountController {
         try{
             String accountNumber = request.getParameter("accountNumber");
             String updatedBalanceString = request.getParameter("balance");
-            Account account = dashboardService.getBankAccount(accountNumber);
-            account.setBalance(Double.parseDouble(updatedBalanceString));
+            dashboardService.updateBankAccountBalance(accountNumber, Double.parseDouble(updatedBalanceString));
             return new RedirectView("/");
         } catch (Exception e) {
             this.dashboardService.setActiveError(e);

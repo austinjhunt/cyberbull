@@ -2,7 +2,8 @@ package edu.vanderbilt.cs.cyberbull.core.account.commander;
 
 import edu.vanderbilt.cs.cyberbull.core.Stock;
 import edu.vanderbilt.cs.cyberbull.core.account.*;
-import edu.vanderbilt.cs.cyberbull.core.account.commander.account_operations.TransferOperation;
+import edu.vanderbilt.cs.cyberbull.core.activity.account.AccountActivity;
+import edu.vanderbilt.cs.cyberbull.core.activity.account.operations.TransferOperation;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

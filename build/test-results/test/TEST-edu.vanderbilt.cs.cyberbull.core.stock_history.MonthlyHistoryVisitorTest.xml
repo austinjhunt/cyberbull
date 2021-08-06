@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.vanderbilt.cs.cyberbull.core.stock_history.MonthlyHistoryVisitorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-06T02:52:34" hostname="huntaj-imac.localdomain" time="0.721">
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.stock_history.MonthlyHistoryVisitorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-06T22:04:40" hostname="huntaj-imac.localdomain" time="0.566">
   <properties/>
-  <testcase name="visit()" classname="edu.vanderbilt.cs.cyberbull.core.stock_history.MonthlyHistoryVisitorTest" time="0.721"/>
-  <system-out><![CDATA[22:52:34.931 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-22:52:34.955 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628193602
-22:52:34.957 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
-22:52:35.475 [Test worker] DEBUG yahoofinance.histquotes2.CrumbManager - Set cookie from http request: B=4hkoc3pggp8vj&b=3&s=ap
-22:52:35.544 [Test worker] DEBUG yahoofinance.histquotes2.CrumbManager - Set crumb from http request: 66.cjS0X2Xk
-22:52:35.544 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Sending request: https://query1.finance.yahoo.com/v7/finance/download/TSLA?period1=1596643200&period2=1628179200&interval=1mo&crumb=66.cjS0X2Xk
-22:52:35.606 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-01,502.140015,502.489990,329.880005,429.010010,429.010010,1736284800
-22:52:35.607 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-10-01,440.760010,465.899994,379.109985,388.040009,388.040009,833666400
-22:52:35.608 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-11-01,394.000000,607.799988,392.299988,567.599976,567.599976,782598800
-22:52:35.608 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-12-01,597.590027,718.719971,541.210022,705.669983,705.669983,1196346000
-22:52:35.608 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-01-01,719.460022,900.400024,717.190002,793.530029,793.530029,705694800
-22:52:35.609 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-02-01,814.289978,880.500000,619.000000,675.500000,675.500000,522857900
-22:52:35.609 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-03-01,690.109985,721.109985,539.489990,667.929993,667.929993,942452400
-22:52:35.609 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-01,688.369995,780.789978,659.419983,709.440002,709.440002,678539700
-22:52:35.609 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-05-01,703.799988,706.000000,546.979980,625.219971,625.219971,625175800
-22:52:35.610 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-06-01,627.799988,697.619995,571.219971,679.700012,679.700012,519921900
-22:52:35.610 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-07-01,683.919983,700.000000,620.460022,687.200012,687.200012,448340700
-22:52:35.610 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-08-01,700.000000,726.940002,698.400024,710.919983,710.919983,72210400
-22:52:35.611 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-08-05,716.000000,720.949890,711.409973,714.630005,714.630005,12919637
+  <testcase name="visit()" classname="edu.vanderbilt.cs.cyberbull.core.stock_history.MonthlyHistoryVisitorTest" time="0.566"/>
+  <system-out><![CDATA[18:04:40.708 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+18:04:40.728 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628280003
+18:04:40.728 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+18:04:41.152 [Test worker] DEBUG yahoofinance.histquotes2.CrumbManager - Set cookie from http request: B=c704pj9ggrcfo&b=3&s=mo
+18:04:41.210 [Test worker] DEBUG yahoofinance.histquotes2.CrumbManager - Set crumb from http request: 0qAeV9V3PcD
+18:04:41.210 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Sending request: https://query1.finance.yahoo.com/v7/finance/download/TSLA?period1=1596729600&period2=1628265600&interval=1mo&crumb=0qAeV9V3PcD
+18:04:41.266 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-09-01,502.140015,502.489990,329.880005,429.010010,429.010010,1736284800
+18:04:41.267 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-10-01,440.760010,465.899994,379.109985,388.040009,388.040009,833666400
+18:04:41.268 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-11-01,394.000000,607.799988,392.299988,567.599976,567.599976,782598800
+18:04:41.268 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2020-12-01,597.590027,718.719971,541.210022,705.669983,705.669983,1196346000
+18:04:41.268 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-01-01,719.460022,900.400024,717.190002,793.530029,793.530029,705694800
+18:04:41.269 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-02-01,814.289978,880.500000,619.000000,675.500000,675.500000,522857900
+18:04:41.269 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-03-01,690.109985,721.109985,539.489990,667.929993,667.929993,942452400
+18:04:41.269 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-04-01,688.369995,780.789978,659.419983,709.440002,709.440002,678539700
+18:04:41.270 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-05-01,703.799988,706.000000,546.979980,625.219971,625.219971,625175800
+18:04:41.270 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-06-01,627.799988,697.619995,571.219971,679.700012,679.700012,519921900
+18:04:41.270 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-07-01,683.919983,700.000000,620.460022,687.200012,687.200012,448393900
+18:04:41.270 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-08-01,700.000000,726.940002,698.400024,714.630005,714.630005,85128800
+18:04:41.271 [Test worker] INFO yahoofinance.histquotes2.HistQuotes2Request - Parsing CSV line: 2021-08-06,711.900024,716.330017,698.439880,699.099976,699.099976,15426246
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

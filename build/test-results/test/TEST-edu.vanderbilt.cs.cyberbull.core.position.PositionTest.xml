@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-08-06T02:52:33" hostname="huntaj-imac.localdomain" time="1.252">
+<testsuite name="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-08-06T22:04:39" hostname="huntaj-imac.localdomain" time="0.702">
   <properties/>
-  <testcase name="getCurrentValue()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="1.239"/>
-  <testcase name="setQuantity()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.001"/>
+  <testcase name="getCurrentValue()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.692"/>
+  <testcase name="setQuantity()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.002"/>
   <testcase name="getQuantity()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.001"/>
-  <testcase name="updateQuantityByValue()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.003"/>
-  <testcase name="getStock()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.002"/>
-  <system-out><![CDATA[22:52:33.949 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
-22:52:34.816 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628193602
-22:52:34.855 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
+  <testcase name="updateQuantityByValue()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.001"/>
+  <testcase name="getStock()" classname="edu.vanderbilt.cs.cyberbull.core.position.PositionTest" time="0.001"/>
+  <system-out><![CDATA[18:04:40.164 [Test worker] INFO yahoofinance.quotes.query1v7.QuotesRequest - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=TSLA
+18:04:40.680 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1628280003
+18:04:40.681 [Test worker] DEBUG yahoofinance.Utils - unixToCalendar 1627315620
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

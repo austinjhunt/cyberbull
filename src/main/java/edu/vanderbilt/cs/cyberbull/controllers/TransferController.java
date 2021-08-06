@@ -37,7 +37,7 @@ public class TransferController {
         String fromAccountNumber = request.getParameter("fromAccountNumber");
         Double transferAmount = Double.parseDouble(request.getParameter("transferAmount"));
         try{
-            this.dashboardService.transferFunds(
+            this.dashboardService.transfer(
                     fromAccountNumber, toAccountNumber, transferAmount);
         } catch (InsufficientFundsException | NullPointerException e){
             this.dashboardService.setActiveError(e);

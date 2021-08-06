@@ -8,12 +8,10 @@ package edu.vanderbilt.cs.cyberbull.core.portfolio;
 
 import edu.vanderbilt.cs.cyberbull.core.Stock;
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
-import edu.vanderbilt.cs.cyberbull.core.account.commander.AccountActivity;
-import edu.vanderbilt.cs.cyberbull.core.account.commander.account_operations.AccountOperation;
+import edu.vanderbilt.cs.cyberbull.core.activity.portfolio.PortfolioActivity;
 import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
-import edu.vanderbilt.cs.cyberbull.core.portfolio.portfolio_operations.MarketOrderOperation;
-import edu.vanderbilt.cs.cyberbull.core.portfolio.portfolio_operations.OrderOperation;
-import edu.vanderbilt.cs.cyberbull.core.portfolio.portfolio_operations.PortfolioOperation;
+import edu.vanderbilt.cs.cyberbull.core.activity.portfolio.operations.MarketOrderOperation;
+import edu.vanderbilt.cs.cyberbull.core.activity.portfolio.operations.OrderOperation;
 import edu.vanderbilt.cs.cyberbull.core.position.Position;
 
 import java.util.ArrayList;
@@ -72,5 +70,8 @@ public class Portfolio {
         return positionList;
     }
 
+    public PortfolioActivity getActivity(){
+        return activity;
+    }
 
 }
