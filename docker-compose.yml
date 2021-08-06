@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    image: cyberbull/cyberbull-web
+    ports:
+      - 8080:8080
+    container_name: webby
+  db:
+    image: couchbase
+    ports:
+      - 8091:8091
+    expose:
+      - 8091
+    container_name: couchie
+    volumes:
+      - ./data:/opt/couchbase/var/lib/couchbase/data
