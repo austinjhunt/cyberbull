@@ -28,9 +28,11 @@ public class MarketOrderOperation extends OrderOperation {
     }
     public void execute() throws InsufficientFundsException {
         try {
-            if (this.action == "buy") {
+            if (this.action.contains("buy")) {
+                System.out.println("Buying!");
                 this.executeBuy();
-            } else if (this.action == "sell") {
+            } else if (this.action.contains("sell")) {
+                System.out.println("Selling!");
                 this.executeSell();
             }
             this.dateTime = LocalDateTime.now();

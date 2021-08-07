@@ -35,8 +35,9 @@ public class OrderOperation implements PortfolioOperation {
         this.action = action + " " + quantity + " shares of " + stock.getSymbol();
         this.stock = stock;
         this.currentSharePrice = stock.getCurrentPrice();
-        this.transactionTotal = this.currentSharePrice * this.quantity;
         this.quantity = quantity;
+        this.transactionTotal = this.currentSharePrice * this.quantity;
+        this.account = account;
     }
     public String getAction(){
         return action;

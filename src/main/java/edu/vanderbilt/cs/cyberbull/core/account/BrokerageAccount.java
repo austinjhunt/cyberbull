@@ -61,7 +61,6 @@ public class BrokerageAccount implements Account{
         this.corePosition = 0;
         this.balance = 0;
     }
-
     public void setTitle(String title) {
         this.title = title;
     }
@@ -88,22 +87,20 @@ public class BrokerageAccount implements Account{
     public void updateBalance(double delta){
         this.balance += delta;
     }
-
     @Override
     public void setCorePosition(double value) {
         corePosition = value;
     }
-
     @Override
     public void updateCorePosition(double delta) {
+        System.out.println("Core position before delta (" + delta + "): " + corePosition);
         corePosition += delta;
+        System.out.println("Core position after delta (" + delta + "): " + corePosition);
     }
-
     @Override
     public double getCorePosition() {
        return corePosition;
     }
-
     @Override
     public String getRoutingNumber() {
         return this.routingNumber;

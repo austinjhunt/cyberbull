@@ -40,9 +40,9 @@ public class LimitOrderOperation extends OrderOperation {
     }
     public void execute(){
         try {
-            if (this.action == "buy") {
+            if (this.action.contains("buy")) {
                 this.executeBuy();
-            } else if (this.action == "sell") {
+            } else if (this.action.contains("sell")) {
                 this.executeSell();
             }
             this.dateTime = LocalDateTime.now();

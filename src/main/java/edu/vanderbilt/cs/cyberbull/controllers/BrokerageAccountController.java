@@ -43,7 +43,6 @@ public class BrokerageAccountController {
             model.addAttribute("errorMessage", e.getMessage());
             return "error";
         }
-
     }
 
     @GetMapping(path="/brokerageAccounts/createRandom")

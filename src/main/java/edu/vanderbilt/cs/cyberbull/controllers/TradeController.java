@@ -53,9 +53,11 @@ public class TradeController {
                 if (action.equals("buy")){
                     if (positionOptional.isPresent()){
                         // add to existing position
+                        System.out.println("Updating existing position");
                         account.getPortfolio().buyMore(positionOptional.get(), shares);
                     } else {
                         // new position
+                        System.out.println("New position");
                         account.getPortfolio().openPosition(stock, shares);
                     }
                 } else if (action.equals("sell")){
