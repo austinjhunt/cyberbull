@@ -9,16 +9,10 @@ import com.kwabenaberko.newsapilib.models.Article;
 import com.opencsv.exceptions.CsvException;
 import edu.vanderbilt.cs.cyberbull.core.account.Account;
 import edu.vanderbilt.cs.cyberbull.core.account.AccountManager;
-import edu.vanderbilt.cs.cyberbull.core.account.BankAccountFactory;
-import edu.vanderbilt.cs.cyberbull.core.account.BrokerageAccountFactory;
-import edu.vanderbilt.cs.cyberbull.core.account.balancefinder.BalanceFinderContext;
 import edu.vanderbilt.cs.cyberbull.core.activity.Operation;
-import edu.vanderbilt.cs.cyberbull.core.activity.account.AccountActivity;
-import edu.vanderbilt.cs.cyberbull.core.activity.account.operations.AccountOperation;
-import edu.vanderbilt.cs.cyberbull.core.activity.account.operations.TransferOperation;
-import edu.vanderbilt.cs.cyberbull.core.couchbase.stockdb.StockDB;
+import edu.vanderbilt.cs.cyberbull.core.db.StockDB;
 import edu.vanderbilt.cs.cyberbull.core.exceptions.InsufficientFundsException;
-import edu.vanderbilt.cs.cyberbull.core.news.NewsFinder;
+import edu.vanderbilt.cs.cyberbull.core.news.NewsManager;
 import edu.vanderbilt.cs.cyberbull.core.stock_history.DailyHistoryVisitor;
 import edu.vanderbilt.cs.cyberbull.core.stock_history.MonthlyHistoryVisitor;
 import edu.vanderbilt.cs.cyberbull.core.stock_history.WeeklyHistoryVisitor;
@@ -28,7 +22,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 /* Dashboard represents the Bridge pattern in that it divides the underlying code
 of the accounts, portfolios, stocks, positions, etc. from the key client-facing functionalities.
@@ -37,23 +30,19 @@ Assume a client can have multiple bank accounts on their dashboard and multiple 
  */
 public class Dashboard {
     private final AccountManager accountManager;
-    private final List<Article> newsCache;
-    private final NewsFinder newsFinder;
+    private final NewsManager newsManager;
     private final StockDB stockDB;
 
     public Dashboard() throws IOException, CsvException {
         accountManager = new AccountManager();
-        newsCache = new ArrayList<>();
-        newsFinder = new NewsFinder();
+        newsManager = new NewsManager();
         stockDB = new StockDB();
     }
-
     public List<Stock> getAllStocks(){
         List<Stock> allStocks = new ArrayList<>();
         getBrokerageAccountList().forEach(ba -> ba.getPortfolio().getPositions().forEach(p->allStocks.add(p.getStock())));
         return allStocks;
     }
-
     public boolean addBankAccount(String title, String description, String routingNumber, String accountNumber){
         return accountManager.addBankAccount(title, description, routingNumber, accountNumber);
     }
@@ -111,7 +100,6 @@ public class Dashboard {
         return stockDB.getStock(symbol);
     }
 
-
     public List<HistoricalQuote> getDailyStockHistory(Stock stock){
         DailyHistoryVisitor visitor = new DailyHistoryVisitor();
         return visitor.visit(stock);
@@ -124,11 +112,7 @@ public class Dashboard {
         MonthlyHistoryVisitor visitor = new MonthlyHistoryVisitor();
         return visitor.visit(stock);
     }
-
     public List<Article> getBusinessNews(String businessName){
-        if (newsCache.size() == 0) {
-            newsCache.addAll(newsFinder.queryNewsForBusiness(businessName));
-        }
-        return newsCache;
+        return newsManager.getBusinessNews(businessName);
     }
 }

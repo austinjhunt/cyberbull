@@ -1,7 +1,8 @@
-package edu.vanderbilt.cs.cyberbull.core.couchbase.stockdb;
+package edu.vanderbilt.cs.cyberbull.core.db;
 
 import com.opencsv.exceptions.CsvException;
 import edu.vanderbilt.cs.cyberbull.core.Stock;
+import edu.vanderbilt.cs.cyberbull.core.db.StockDB;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

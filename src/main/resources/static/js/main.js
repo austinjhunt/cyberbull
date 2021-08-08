@@ -15,6 +15,13 @@ $(document).ready(function(){
     console.log(error);
     }
 
+    try{
+        // handle recent activity datatable in specific way
+        $("#recent-activity").DataTable({
+            'order': [[1, "desc"]]
+        }); // most recent first; second column (1) is date/time
+    } catch(error){ console.log(error);}
+
     $("#sp500stockstable tbody tr").on('click', function(){
         window.location.href = '/stock/' + $(this).data('stock-symbol');
         });
